@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for key,value in send.items %}
+        <form action="/distritoDetail/" method ='get'>
+            <h4>{{ key }} : {{ value }}</h4>
+            <button name=id value={{ value }} class="btn">Select</button>
+        </form>
+    {% endfor %}
+</body>
+</html>

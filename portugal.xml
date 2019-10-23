@@ -1,0 +1,930 @@
+<distritos>
+	<distrito iddistrito="1">
+		<iddistrito>1</iddistrito>
+		<nomedistrito>Aveiro</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="1">
+				<idmunicipio>1</idmunicipio>
+				<nomeconcelho>Águeda</nomeconcelho>
+				<regiao></regiao>
+				<area></area>
+				<populacao></populacao>
+				<densidadepopulacional></densidadepopulacional>
+				<interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome></nome>
+						<tipo>cultura</tipo>
+					</interesse>
+					<interesse idinteresse="2">
+						<idinteresse>1</idinteresse>
+						<nome></nome>
+						<tipo>cultura | lazer | património | gastronomia e vinhos</tipo>
+					</interesse>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome></nome>
+						<tipo>cultura | lazer | património | gastronomia e vinhos</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="2">
+				<idmunicipio>2</idmunicipio>
+				<nomeconcelho>Albergaria-a-Velha</nomeconcelho>
+				<regiao></regiao>
+				<area></area>
+				<populacao></populacao>
+				<densidadepopulacional></densidadepopulacional>
+			</municipio>
+		</municipios>
+	</distrito>
+
+	<distrito iddistrito="16">
+		<iddistrito>16</iddistrito>
+		<nomedistrito>Viana do Castelo</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="301">
+				<idmunicipio>301</idmunicipio>
+				<nomeconcelho>Viana do Castelo</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>319,02</area>
+				<populacao>88725</populacao>
+				<densidadepopulacional>278,1</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="302">
+				<idmunicipio>302</idmunicipio>
+				<nomeconcelho>Valença</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>117,13</area>
+				<populacao>14127</populacao>
+				<densidadepopulacional>120,6</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="303">
+				<idmunicipio>303</idmunicipio>
+				<nomeconcelho>Arcos de Valdevez</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>447,60</area>
+				<populacao>22847</populacao>
+				<densidadepopulacional>51</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="304">
+				<idmunicipio>304</idmunicipio>
+				<nomeconcelho>Caminha</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>136,52</area>
+				<populacao>16684</populacao>
+				<densidadepopulacional>122,2</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="305">
+				<idmunicipio>305</idmunicipio>
+				<nomeconcelho>Melgaço</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>238,25</area>
+				<populacao>9213</populacao>
+				<densidadepopulacional>38,7</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="306">
+				<idmunicipio>306</idmunicipio>
+				<nomeconcelho>Monção</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>211,31</area>
+				<populacao>19230</populacao>
+				<densidadepopulacional>91</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="307">
+				<idmunicipio>307</idmunicipio>
+				<nomeconcelho>Paredes de Coura</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>138,19</area>
+				<populacao>9198</populacao>
+				<densidadepopulacional>66,6</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="308">
+				<idmunicipio>308</idmunicipio>
+				<nomeconcelho>Ponte da Barca</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>184,76</area>
+				<populacao>12061</populacao>
+				<densidadepopulacional>65,3</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="309">
+				<idmunicipio>309</idmunicipio>
+				<nomeconcelho>Ponte de Lima</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>320,25</area>
+				<populacao>43498</populacao>
+				<densidadepopulacional>135,8</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="310">
+				<idmunicipio>310</idmunicipio>
+				<nomeconcelho>Vila Nova de Cerveira</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>108,47</area>
+				<populacao>9253</populacao>
+				<densidadepopulacional>85,3</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+		</municipios>
+	</distrito>
+	<distrito iddistrito="17">
+		<iddistrito>17</iddistrito>
+		<nomedistrito>Vila Real</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="311">
+				<idmunicipio>311</idmunicipio>
+				<nomeconcelho>Alijó</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>297,60</area>
+				<populacao>11942</populacao>
+				<densidadepopulacional>40,1</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="312">
+				<idmunicipio>312</idmunicipio>
+				<nomeconcelho>Boticas</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>321,96</area>
+				<populacao>5750</populacao>
+				<densidadepopulacional>17,9</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="313">
+				<idmunicipio>313</idmunicipio>
+				<nomeconcelho>Chaves</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>591,23</area>
+				<populacao>41243</populacao>
+				<densidadepopulacional>69,8</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="314">
+				<idmunicipio>314</idmunicipio>
+				<nomeconcelho>Mesão Frio</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>26,65</area>
+				<populacao>4433</populacao>
+				<densidadepopulacional>166,3</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="315">
+				<idmunicipio>315</idmunicipio>
+				<nomeconcelho>Mondim de Basto</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>172,08</area>
+				<populacao>7493</populacao>
+				<densidadepopulacional>43,5</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="316">
+				<idmunicipio>316</idmunicipio>
+				<nomeconcelho>Montalegre</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>805,46</area>
+				<populacao>10537</populacao>
+				<densidadepopulacional>13,1</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="317">
+				<idmunicipio>317</idmunicipio>
+				<nomeconcelho>Murça</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>189,37</area>
+				<populacao>5952</populacao>
+				<densidadepopulacional>31,4</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="318">
+				<idmunicipio>318</idmunicipio>
+				<nomeconcelho>Peso da Régua</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>94,86</area>
+				<populacao>17131</populacao>
+				<densidadepopulacional>180,6</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="319">
+				<idmunicipio>319</idmunicipio>
+				<nomeconcelho>Ribeira de Pena</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>217,46</area>
+				<populacao>6544</populacao>
+				<densidadepopulacional>30,1</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="320">
+				<idmunicipio>320</idmunicipio>
+				<nomeconcelho>Sabrosa</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>156,92</area>
+				<populacao>6361</populacao>
+				<densidadepopulacional>40,5</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="321">
+				<idmunicipio>321</idmunicipio>
+				<nomeconcelho>Santa Marta de Penaguião</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>69,28</area>
+				<populacao>7356</populacao>
+				<densidadepopulacional>106,2</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="322">
+				<idmunicipio>322</idmunicipio>
+				<nomeconcelho>Valpaços</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>548,74</area>
+				<populacao>16882</populacao>
+				<densidadepopulacional>30,76</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="323">
+				<idmunicipio>323</idmunicipio>
+				<nomeconcelho>Vila Pouca de Aguiar</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>437,07</area>
+				<populacao>13187</populacao>
+				<densidadepopulacional>30,2</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="324">
+				<idmunicipio>324</idmunicipio>
+				<nomeconcelho>Vila Real</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>378,80</area>
+				<populacao>51850</populacao>
+				<densidadepopulacional>136,9</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+		</municipios>
+	</distrito>
+	<distrito iddistrito="18">
+		<iddistrito>18</iddistrito>
+		<nomedistrito>Viseu</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="325">
+				<idmunicipio>325</idmunicipio>
+				<nomeconcelho>Armamar</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>117,24</area>
+				<populacao>6297</populacao>
+				<densidadepopulacional>53,7</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="326">
+				<idmunicipio>326</idmunicipio>
+				<nomeconcelho>Carregal do Sal</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>116,89</area>
+				<populacao>9835</populacao>
+				<densidadepopulacional>84,1</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="327">
+				<idmunicipio>327</idmunicipio>
+				<nomeconcelho>Castro Daire</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>379,04</area>
+				<populacao>15339</populacao>
+				<densidadepopulacional>40,5</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="328">
+				<idmunicipio>328</idmunicipio>
+				<nomeconcelho>Cinfães</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>239,29</area>
+				<populacao>20427</populacao>
+				<densidadepopulacional>85,4</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="329">
+				<idmunicipio>329</idmunicipio>
+				<nomeconcelho>Lamego</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>165,42</area>
+				<populacao>26691</populacao>
+				<densidadepopulacional>161,4</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="330">
+				<idmunicipio>330</idmunicipio>
+				<nomeconcelho>Mangualde</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>219,26</area>
+				<populacao>19880</populacao>
+				<densidadepopulacional>90,7</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="331">
+				<idmunicipio>331</idmunicipio>
+				<nomeconcelho>Moimenta da Beira</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>219,97</area>
+				<populacao>10201</populacao>
+				<densidadepopulacional>46,37</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="332">
+				<idmunicipio>332</idmunicipio>
+				<nomeconcelho>Mortágua</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>251,18</area>
+				<populacao>9607</populacao>
+				<densidadepopulacional>38,2</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="333">
+				<idmunicipio>333</idmunicipio>
+				<nomeconcelho>Nelas</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>125,71</area>
+				<populacao>14037</populacao>
+				<densidadepopulacional>111,7</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="334">
+				<idmunicipio>334</idmunicipio>
+				<nomeconcelho>Oliveira de Frades</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>147,45</area>
+				<populacao>10261</populacao>
+				<densidadepopulacional>69,6</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="335">
+				<idmunicipio>335</idmunicipio>
+				<nomeconcelho>Penalva do Castelo</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>134,34</area>
+				<populacao>7956</populacao>
+				<densidadepopulacional>59,2</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="336">
+				<idmunicipio>336</idmunicipio>
+				<nomeconcelho>Penedono</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>133,71</area>
+				<populacao>2952</populacao>
+				<densidadepopulacional>22,1</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="337">
+				<idmunicipio>337</idmunicipio>
+				<nomeconcelho>Resende</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>123,35</area>
+				<populacao>11364</populacao>
+				<densidadepopulacional>92,1</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="338">
+				<idmunicipio>338</idmunicipio>
+				<nomeconcelho>Santa Comba Dão</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>111,95</area>
+				<populacao>11597</populacao>
+				<densidadepopulacional>103,6</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="339">
+				<idmunicipio>339</idmunicipio>
+				<nomeconcelho>São João da Pesqueira</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>266,11</area>
+				<populacao>7874</populacao>
+				<densidadepopulacional>29,6</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="340">
+				<idmunicipio>340</idmunicipio>
+				<nomeconcelho>São Pedro do Sul</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>348,68</area>
+				<populacao>16851</populacao>
+				<densidadepopulacional>48,3</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="341">
+				<idmunicipio>341</idmunicipio>
+				<nomeconcelho>Sátão</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>201,94</area>
+				<populacao>12444</populacao>
+				<densidadepopulacional>61,6</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="342">
+				<idmunicipio>342</idmunicipio>
+				<nomeconcelho>Sernancelhe</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>228,61</area>
+				<populacao>5671</populacao>
+				<densidadepopulacional>24,8</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="343">
+				<idmunicipio>343</idmunicipio>
+				<nomeconcelho>Tabuaço</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>133,86</area>
+				<populacao>6350</populacao>
+				<densidadepopulacional>47,4</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="344">
+				<idmunicipio>344</idmunicipio>
+				<nomeconcelho>Tarouca</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>100,08</area>
+				<populacao>8048</populacao>
+				<densidadepopulacional>80,4</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="345">
+				<idmunicipio>345</idmunicipio>
+				<nomeconcelho>Tondela</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>371,22</area>
+				<populacao>28946</populacao>
+				<densidadepopulacional>78</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="346">
+				<idmunicipio>346</idmunicipio>
+				<nomeconcelho>Vila Nova de Paiva</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>175,53</area>
+				<populacao>5176</populacao>
+				<densidadepopulacional>29,5</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="347">
+				<idmunicipio>347</idmunicipio>
+				<nomeconcelho>Viseu</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>507,10</area>
+				<populacao>99274</populacao>
+				<densidadepopulacional>195,76</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="348">
+				<idmunicipio>348</idmunicipio>
+				<nomeconcelho>Vouzela</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>193,69</area>
+				<populacao>10564</populacao>
+				<densidadepopulacional>54,5</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+		</municipios>
+	</distrito>
+	<distrito iddistrito="19">
+		<iddistrito>19</iddistrito>
+		<nomedistrito>Madeira</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="349">
+				<idmunicipio>349</idmunicipio>
+				<nomeconcelho>Calheta</nomeconcelho>
+				<regiao>Região Autónoma da Madeira</regiao>
+				<area>111,52</area>
+				<populacao>11521</populacao>
+				<densidadepopulacional>103,31</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="350">
+				<idmunicipio>350</idmunicipio>
+				<nomeconcelho>Câmara de Lobos</nomeconcelho>
+				<regiao>Região Autónoma da Madeira</regiao>
+				<area>52,15</area>
+				<populacao>35666</populacao>
+				<densidadepopulacional>683,91</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="351">
+				<idmunicipio>351</idmunicipio>
+				<nomeconcelho>Ponta do Sol</nomeconcelho>
+				<regiao>Região Autónoma da Madeira</regiao>
+				<area>46,19</area>
+				<populacao>8862</populacao>
+				<densidadepopulacional>191,86</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="352">
+				<idmunicipio>352</idmunicipio>
+				<nomeconcelho>Porto Moniz</nomeconcelho>
+				<regiao>Região Autónoma da Madeira</regiao>
+				<area>82,93</area>
+				<populacao>2711</populacao>
+				<densidadepopulacional>32,69</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="353">
+				<idmunicipio>353</idmunicipio>
+				<nomeconcelho>Ribeira Brava</nomeconcelho>
+				<regiao>Região Autónoma da Madeira</regiao>
+				<area>65,40</area>
+				<populacao>13375</populacao>
+				<densidadepopulacional>204,51</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="354">
+				<idmunicipio>354</idmunicipio>
+				<nomeconcelho>Santana</nomeconcelho>
+				<regiao>Região Autónoma da Madeira</regiao>
+				<area>95,56</area>
+				<populacao>7719</populacao>
+				<densidadepopulacional>80,78</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="355">
+				<idmunicipio>355</idmunicipio>
+				<nomeconcelho>São Vicente</nomeconcelho>
+				<regiao>Região Autónoma da Madeira</regiao>
+				<area>78,82</area>
+				<populacao>5723</populacao>
+				<densidadepopulacional>72,61</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="356">
+				<idmunicipio>356</idmunicipio>
+				<nomeconcelho>Funchal</nomeconcelho>
+				<regiao>Região Autónoma da Madeira</regiao>
+				<area>76,15</area>
+				<populacao>111892</populacao>
+				<densidadepopulacional>1469,36</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="357">
+				<idmunicipio>357</idmunicipio>
+				<nomeconcelho>Machico</nomeconcelho>
+				<regiao>Região Autónoma da Madeira</regiao>
+				<area>68,31</area>
+				<populacao>21828</populacao>
+				<densidadepopulacional>319,54</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="358">
+				<idmunicipio>358</idmunicipio>
+				<nomeconcelho>Porto Santo</nomeconcelho>
+				<regiao>Região Autónoma da Madeira</regiao>
+				<area>42,48</area>
+				<populacao>5483</populacao>
+				<densidadepopulacional>129,07</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="359">
+				<idmunicipio>359</idmunicipio>
+				<nomeconcelho>Santa Cruz</nomeconcelho>
+				<regiao>Região Autónoma da Madeira</regiao>
+				<area>81,50</area>
+				<populacao>43005</populacao>
+				<densidadepopulacional>527,67</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+		</municipios>
+	</distrito>
+	<distrito iddistrito="20">
+		<iddistrito>20</iddistrito>
+		<nomedistrito>Açores</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="360">
+				<idmunicipio>360</idmunicipio>
+				<nomeconcelho>Vila do Porto</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>97,2</area>
+				<populacao>5547</populacao>
+				<densidadepopulacional>57,1</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="361">
+				<idmunicipio>361</idmunicipio>
+				<nomeconcelho>Lagoa</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>45,6</area>
+				<populacao>14430</populacao>
+				<densidadepopulacional>316,4</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="362">
+				<idmunicipio>362</idmunicipio>
+				<nomeconcelho>Nordeste</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>99,9</area>
+				<populacao>4920</populacao>
+				<densidadepopulacional>49,2</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="363">
+				<idmunicipio>363</idmunicipio>
+				<nomeconcelho>Ponta Delgada</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>233,0</area>
+				<populacao>68748</populacao>
+				<densidadepopulacional>295,1</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="364">
+				<idmunicipio>364</idmunicipio>
+				<nomeconcelho>Povoação</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>108,0</area>
+				<populacao>6314</populacao>
+				<densidadepopulacional>58,5</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="365">
+				<idmunicipio>365</idmunicipio>
+				<nomeconcelho>Ribeira Grande</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>180,2</area>
+				<populacao>32032</populacao>
+				<densidadepopulacional>177,8</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="366">
+				<idmunicipio>366</idmunicipio>
+				<nomeconcelho>Vila Franca do Campo</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>78,0</area>
+				<populacao>11255</populacao>
+				<densidadepopulacional>144,3</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="367">
+				<idmunicipio>367</idmunicipio>
+				<nomeconcelho>Angra do Heroísmo</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>241,0</area>
+				<populacao>34976</populacao>
+				<densidadepopulacional>145,1</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="368">
+				<idmunicipio>368</idmunicipio>
+				<nomeconcelho>Praia da Vitória</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>161,3</area>
+				<populacao>21086</populacao>
+				<densidadepopulacional>130,7</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="369">
+				<idmunicipio>369</idmunicipio>
+				<nomeconcelho>Santa Cruz da Graciosa</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>61,2</area>
+				<populacao>4393</populacao>
+				<densidadepopulacional>71,8</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="370">
+				<idmunicipio>370</idmunicipio>
+				<nomeconcelho>Calheta</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>126,3</area>
+				<populacao>3617</populacao>
+				<densidadepopulacional>28,6</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="371">
+				<idmunicipio>371</idmunicipio>
+				<nomeconcelho>Velas</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>117,4</area>
+				<populacao>5381</populacao>
+				<densidadepopulacional>45,8</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="372">
+				<idmunicipio>372</idmunicipio>
+				<nomeconcelho>Lajes do Pico</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>155,3</area>
+				<populacao>4701</populacao>
+				<densidadepopulacional>30,3</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="373">
+				<idmunicipio>373</idmunicipio>
+				<nomeconcelho>Madalena</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>147,1</area>
+				<populacao>6049</populacao>
+				<densidadepopulacional>41,1</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="374">
+				<idmunicipio>374</idmunicipio>
+				<nomeconcelho>São Roque do Pico</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>142,4</area>
+				<populacao>3394</populacao>
+				<densidadepopulacional>23,8</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="375">
+				<idmunicipio>375</idmunicipio>
+				<nomeconcelho>Horta</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>173,1</area>
+				<populacao>15038</populacao>
+				<densidadepopulacional>86,9</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="376">
+				<idmunicipio>376</idmunicipio>
+				<nomeconcelho>Lajes das Flores</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>70,0</area>
+				<populacao>1503</populacao>
+				<densidadepopulacional>21,5</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="377">
+				<idmunicipio>377</idmunicipio>
+				<nomeconcelho>Santa Cruz das Flores</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>70,9</area>
+				<populacao>2288</populacao>
+				<densidadepopulacional>32,3</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+			<municipio idmunicipio="378">
+				<idmunicipio>378</idmunicipio>
+				<nomeconcelho>Vila do Corvo</nomeconcelho>
+				<regiao>Região Autónoma dos Açores</regiao>
+				<area>17,1</area>
+				<populacao>430</populacao>
+				<densidadepopulacional>25,1</densidadepopulacional>
+				<interesses>
+
+				</interesses>
+			</municipio>
+		</municipios>
+	</distrito>
+</distritos>

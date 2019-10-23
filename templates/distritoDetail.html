@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for key,value in send.items %}
+        <form action="/labelList/" method='get'>
+            <h4>{{ key }} : {{ value }}</h4>
+            {% if key == "municipios" and value != None %}
+                <button name=id value = {{ key }} class="btn"> Ver Lista</button>
+            {% endif %}
+        </form>
+    {% endfor %}
+</body>
+</html>
