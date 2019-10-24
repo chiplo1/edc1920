@@ -13,7 +13,7 @@ def main(request):
     for s in search:
         send[s.find("nomedistrito").text] = s.find("iddistrito").text
 
-    return render(request, 'main.html', {"send": send})
+    return render(request, 'newmain.html', {"send": send})
 
 
 def distritoDetail(request):
