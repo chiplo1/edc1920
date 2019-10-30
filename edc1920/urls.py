@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from projeto1 import views
+from edc1920 import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,3 +24,4 @@ urlpatterns = [
     path('distritoDetail/', views.distritoDetail, name='distritoDetail'),
     path('labelList/', views.labelList, name='labelList')
 ]
+
