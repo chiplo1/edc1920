@@ -6,40 +6,881 @@
 			<municipio idmunicipio="1">
 				<idmunicipio>1</idmunicipio>
 				<nomeconcelho>Águeda</nomeconcelho>
-				<regiao></regiao>
-				<area></area>
-				<populacao></populacao>
-				<densidadepopulacional></densidadepopulacional>
-				<interesses>
-					<interesse idinteresse="1">
-						<idinteresse>1</idinteresse>
-						<nome></nome>
-						<tipo>cultura</tipo>
-					</interesse>
-					<interesse idinteresse="2">
-						<idinteresse>1</idinteresse>
-						<nome></nome>
-						<tipo>cultura | lazer | património | gastronomia e vinhos</tipo>
-					</interesse>
-					<interesse idinteresse="1">
-						<idinteresse>1</idinteresse>
-						<nome></nome>
-						<tipo>cultura | lazer | património | gastronomia e vinhos</tipo>
-					</interesse>
-				</interesses>
+				<regiao>Centro</regiao>
+				<area>335.28</area>
+				<populacao>49857</populacao>
+				<densidadepopulacional>149</densidadepopulacional>
 			</municipio>
 			<municipio idmunicipio="2">
 				<idmunicipio>2</idmunicipio>
 				<nomeconcelho>Albergaria-a-Velha</nomeconcelho>
-				<regiao></regiao>
-				<area></area>
-				<populacao></populacao>
-				<densidadepopulacional></densidadepopulacional>
+				<regiao>Centro</regiao>
+				<area>158.83</area>
+				<populacao>26279</populacao>
+				<densidadepopulacional>165</densidadepopulacional>
+			</municipio>
+    	<municipio idmunicipio="3">
+				<idmunicipio>3</idmunicipio>
+				<nomeconcelho>Anadia</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>216.64</area>
+				<populacao>31422</populacao>
+				<densidadepopulacional>145</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="4">
+				<idmunicipio>4</idmunicipio>
+				<nomeconcelho>Arouca</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>327.99</area>
+				<populacao>23663</populacao>
+				<densidadepopulacional>72</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Passadiços do Paiva</nome>
+						<tipo>Lazer</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="5">
+				<idmunicipio>5</idmunicipio>
+				<nomeconcelho>Aveiro</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>199.77</area>
+				<populacao>73100</populacao>
+				<densidadepopulacional>366</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Ovos Moles</nome>
+						<tipo>Gastronomia e vinhos</tipo>
+					</interesse>
+          <interesse idinteresse="2">
+						<idinteresse>2</idinteresse>
+						<nome>Ria de Aveiro</nome>
+						<tipo>Lazer</tipo>
+					</interesse>
+          <interesse idinteresse="3">
+						<idinteresse>3</idinteresse>
+						<nome>Salinas de Aveiro</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="6">
+				<idmunicipio>6</idmunicipio>
+				<nomeconcelho>Castelo de Paiva</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>114.67</area>
+				<populacao>16785</populacao>
+				<densidadepopulacional>146</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="7">
+				<idmunicipio>7</idmunicipio>
+				<nomeconcelho>Espinho</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>21.11</area>
+				<populacao>29481</populacao>
+				<densidadepopulacional>1397</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="8">
+				<idmunicipio>8</idmunicipio>
+				<nomeconcelho>Estarreja</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>108.16</area>
+				<populacao>28195</populacao>
+				<densidadepopulacional>261</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="9">
+				<idmunicipio>9</idmunicipio>
+				<nomeconcelho>Ílhavo</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>75.05</area>
+				<populacao>41271</populacao>
+				<densidadepopulacional>550</densidadepopulacional>
+	      <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Costa Nova</nome>
+						<tipo>Lazer</tipo>
+					</interesse>
+          <interesse idinteresse="2">
+						<idinteresse>2</idinteresse>
+						<nome>Museu Marítmo de Ílhavo, Navio de Santo André</nome>
+						<tipo>Cultura</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="10">
+				<idmunicipio>10</idmunicipio>
+				<nomeconcelho>Mealhada</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>111.14</area>
+				<populacao>22215</populacao>
+				<densidadepopulacional>200</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Leitão da Bairrada</nome>
+						<tipo>Gastronomia e vinhos</tipo>
+					</interesse>
+          <interesse idinteresse="2">
+						<idinteresse>2</idinteresse>
+						<nome>Espumante da Bairrada</nome>
+						<tipo>Gastronomia e vinhos</tipo>
+					</interesse>
+          <interesse idinteresse="3">
+						<idinteresse>3</idinteresse>
+						<nome>Palácio do Buçaco</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="11">
+				<idmunicipio>11</idmunicipio>
+				<nomeconcelho>Murtosa</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>73.65</area>
+				<populacao>9847</populacao>
+				<densidadepopulacional>134</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="12">
+				<idmunicipio>12</idmunicipio>
+				<nomeconcelho>Oliveira de Azeméis</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>163.41</area>
+				<populacao>71210</populacao>
+				<densidadepopulacional>436</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="13">
+				<idmunicipio>13</idmunicipio>
+				<nomeconcelho>Oliveira do Bairro</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>87.28</area>
+				<populacao>23504</populacao>
+				<densidadepopulacional>269</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="14">
+				<idmunicipio>14</idmunicipio>
+				<nomeconcelho>Ovar</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>147.52</area>
+				<populacao>57983</populacao>
+				<densidadepopulacional>393</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Pão-de-ló de Ovar</nome>
+						<tipo>Gastronomia e vinhos</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="15">
+				<idmunicipio>15</idmunicipio>
+				<nomeconcelho>Santa Maria da Feira</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>213.45</area>
+				<populacao>147406</populacao>
+				<densidadepopulacional>691</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Castelo de Santa Maria da Feira</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="16">
+				<idmunicipio>16</idmunicipio>
+				<nomeconcelho>São João da Madeira</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>8.11</area>
+				<populacao>21762</populacao>
+				<densidadepopulacional>2683</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="17">
+				<idmunicipio>17</idmunicipio>
+				<nomeconcelho>Sever do Vouga</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>129.85</area>
+				<populacao>12643</populacao>
+				<densidadepopulacional>97</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="18">
+				<idmunicipio>19</idmunicipio>
+				<nomeconcelho>Vagos</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>165.29</area>
+				<populacao>24107</populacao>
+				<densidadepopulacional>146</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="19">
+				<idmunicipio>19</idmunicipio>
+				<nomeconcelho>Vale de Cambra</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>146.21</area>
+				<populacao>24360</populacao>
+				<densidadepopulacional>167</densidadepopulacional>
 			</municipio>
 		</municipios>
 	</distrito>
-
-    <distrito iddistrito="5">
+	<distrito iddistrito="2">
+		<iddistrito>2</iddistrito>
+		<nomedistrito>Beja</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="20">
+				<idmunicipio>20</idmunicipio>
+				<nomeconcelho>Aljustrel</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>455.66</area>
+				<populacao>9460</populacao>
+				<densidadepopulacional>21</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="21">
+				<idmunicipio>21</idmunicipio>
+				<nomeconcelho>Almodôvar</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>775.88</area>
+				<populacao>7163</populacao>
+				<densidadepopulacional>21</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="22">
+				<idmunicipio>22</idmunicipio>
+				<nomeconcelho>Alvito</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>264.81</area>
+				<populacao>2720</populacao>
+				<densidadepopulacional>10</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Alvito</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="23">
+				<idmunicipio>23</idmunicipio>
+				<nomeconcelho>Barrancos</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>168.43</area>
+				<populacao>1697</populacao>
+				<densidadepopulacional>10</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="24">
+				<idmunicipio>24</idmunicipio>
+				<nomeconcelho>Beja</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>1147.14</area>
+				<populacao>34387</populacao>
+				<densidadepopulacional>30</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Castelo de Beja</nome>
+						<tipo>Património</tipo>
+					</interesse>
+          <interesse idinteresse="2">
+						<idinteresse>2</idinteresse>
+						<nome>Convento de Nossa Senhora da Conceição, Museu Rainha Dona Leonor</nome>
+						<tipo>Cultura</tipo>
+					</interesse>
+          <interesse idinteresse="3">
+						<idinteresse>3</idinteresse>
+						<nome>Gaspacho</nome>
+						<tipo>Gastronomia e vinho</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="25">
+				<idmunicipio>25</idmunicipio>
+				<nomeconcelho>Castro Verde</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>567.31</area>
+				<populacao>7782</populacao>
+				<densidadepopulacional>14</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="26">
+				<idmunicipio>26</idmunicipio>
+				<nomeconcelho>Cuba</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>171.32</area>
+				<populacao>4674</populacao>
+				<densidadepopulacional>27</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="27">
+				<idmunicipio>27</idmunicipio>
+				<nomeconcelho>Ferreira do Alentejo</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>648.45</area>
+				<populacao>8132</populacao>
+				<densidadepopulacional>13</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="28">
+				<idmunicipio>28</idmunicipio>
+				<nomeconcelho>Mértola</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>1279.40</area>
+				<populacao>7332</populacao>
+				<densidadepopulacional>6</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Castelo de Métola</nome>
+						<tipo>Património</tipo>
+					</interesse>
+        	<interesse idinteresse="2">
+						<idinteresse>2</idinteresse>
+						<nome>Parque Natural do Vale do Guadiana</nome>
+						<tipo>Lazer</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="29">
+				<idmunicipio>29</idmunicipio>
+				<nomeconcelho>Moura</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>957.73</area>
+				<populacao>16120</populacao>
+				<densidadepopulacional>17</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="30">
+				<idmunicipio>30</idmunicipio>
+				<nomeconcelho>Odemira</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>1719.73</area>
+				<populacao>25365</populacao>
+				<densidadepopulacional>15</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Vila Nova de Milfontes</nome>
+						<tipo>Lazer</tipo>
+					</interesse>
+          <interesse idinteresse="2">
+						<idinteresse>2</idinteresse>
+						<nome>Praia da Zambujeira do Mar</nome>
+						<tipo>Lazer</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="31">
+				<idmunicipio>31</idmunicipio>
+				<nomeconcelho>Ourique</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>660.15</area>
+				<populacao>5426</populacao>
+				<densidadepopulacional>8</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="32">
+				<idmunicipio>32</idmunicipio>
+				<nomeconcelho>Serpa</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>1103.74</area>
+				<populacao>15455</populacao>
+				<densidadepopulacional>14</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="33">
+				<idmunicipio>33</idmunicipio>
+				<nomeconcelho>Vidigueira</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>314.20</area>
+				<populacao>5886</populacao>
+				<densidadepopulacional>19</densidadepopulacional>
+			</municipio>
+		</municipios>
+	</distrito>
+	<distrito iddistrito="3">
+		<iddistrito>3</iddistrito>
+		<nomedistrito>Braga</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="34">
+				<idmunicipio>34</idmunicipio>
+				<nomeconcelho>Amares</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>81.95</area>
+				<populacao>19853</populacao>
+				<densidadepopulacional>242</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="35">
+				<idmunicipio>35</idmunicipio>
+				<nomeconcelho>Barcelos</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>378.90</area>
+				<populacao>124555</populacao>
+				<densidadepopulacional>329</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Galo de Barcelos</nome>
+						<tipo>Cultura</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="36">
+				<idmunicipio>36</idmunicipio>
+				<nomeconcelho>Braga</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>183.40</area>
+				<populacao>176154</populacao>
+				<densidadepopulacional>960</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Santuário do Bom Jesus</nome>
+						<tipo>Património</tipo>
+					</interesse>
+          <interesse idinteresse="2">
+						<idinteresse>2</idinteresse>
+						<nome>Pudim Abade de Prisco</nome>
+						<tipo>Gastronomia e vinho</tipo>
+					</interesse>
+          <interesse idinteresse="3">
+						<idinteresse>3</idinteresse>
+						<nome>Bacalhau à Narcisa</nome>
+						<tipo>Gastronomia e vinho</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="37">
+				<idmunicipio>37</idmunicipio>
+				<nomeconcelho>Cabeceiras de Basto</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>241.82</area>
+				<populacao>17635</populacao>
+				<densidadepopulacional>73</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="38">
+				<idmunicipio>38</idmunicipio>
+				<nomeconcelho>Celorico da Basto</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>181.07</area>
+				<populacao>19767</populacao>
+				<densidadepopulacional>109</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="39">
+				<idmunicipio>39</idmunicipio>
+				<nomeconcelho>Esposende</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>95.41</area>
+				<populacao>35552</populacao>
+				<densidadepopulacional>373</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="40">
+				<idmunicipio>40</idmunicipio>
+				<nomeconcelho>Fafe</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>219.08</area>
+				<populacao>53600</populacao>
+				<densidadepopulacional>245</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="41">
+				<idmunicipio>41</idmunicipio>
+				<nomeconcelho>Guimarães</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>240.95</area>
+				<populacao>162363</populacao>
+				<densidadepopulacional>675</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Centro Histórico de Guimarães</nome>
+						<tipo>Património</tipo>
+					</interesse>
+          <interesse idinteresse="2">
+						<idinteresse>2</idinteresse>
+						<nome>Castelo de Guimarães</nome>
+						<tipo>Património</tipo>
+					</interesse>
+          <interesse idinteresse="3">
+						<idinteresse>3</idinteresse>
+						<nome>Paço dos Duques de Bragança</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="42">
+				<idmunicipio>42</idmunicipio>
+				<nomeconcelho>Póvoa de Lanhoso</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>134.65</area>
+				<populacao>24230</populacao>
+				<densidadepopulacional>184</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="43">
+				<idmunicipio>43</idmunicipio>
+				<nomeconcelho>Terras de Bouro</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>277.46</area>
+				<populacao>7506</populacao>
+				<densidadepopulacional>27</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Cascata do Arado</nome>
+						<tipo>Lazer</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="44">
+				<idmunicipio>44</idmunicipio>
+				<nomeconcelho>Vieira do Minho</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>216.44</area>
+				<populacao>14077</populacao>
+				<densidadepopulacional>65</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Santuário Nossa Senhora da Lapa</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="45">
+				<idmunicipio>45</idmunicipio>
+				<nomeconcelho>Vila Nova de Famalicão</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>201.59</area>
+				<populacao>134969</populacao>
+				<densidadepopulacional>669</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="46">
+				<idmunicipio>46</idmunicipio>
+				<nomeconcelho>Vila Verde</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>228.67</area>
+				<populacao>49171</populacao>
+				<densidadepopulacional>215</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="47">
+				<idmunicipio>47</idmunicipio>
+				<nomeconcelho>Vizela</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>24.70</area>
+				<populacao>24477</populacao>
+				<densidadepopulacional>1023</densidadepopulacional>
+			</municipio>
+		</municipios>
+	</distrito>
+	<distrito iddistrito="4">
+		<iddistrito>4</iddistrito>
+		<nomedistrito>Bragança</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="48">
+				<idmunicipio>48</idmunicipio>
+				<nomeconcelho>Alfândega da Fé</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>321.96</area>
+				<populacao>5368</populacao>
+				<densidadepopulacional>17</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="49">
+				<idmunicipio>49</idmunicipio>
+				<nomeconcelho>Bragança</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>1173.6</area>
+				<populacao>34375</populacao>
+				<densidadepopulacional>29</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Castelo de Bragança</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="50">
+				<idmunicipio>50</idmunicipio>
+				<nomeconcelho>Carrazeda de Ansiães</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>280.91</area>
+				<populacao>6744</populacao>
+				<densidadepopulacional>24</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="51">
+				<idmunicipio>51</idmunicipio>
+				<nomeconcelho>Freixo de Espada à Cinta</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>244.49</area>
+				<populacao>3834</populacao>
+				<densidadepopulacional>16</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Paisagem e Miradouro do Colado</nome>
+						<tipo>Lazer</tipo>
+					</interesse>
+          <interesse idinteresse="2">
+						<idinteresse>2</idinteresse>
+						<nome>Miradouro da Cruzinha</nome>
+						<tipo>Lazer</tipo>
+					</interesse>
+          <interesse idinteresse="3">
+						<idinteresse>3</idinteresse>
+						<nome>Gravuras Ruprestres de Mazouco</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="52">
+				<idmunicipio>52</idmunicipio>
+				<nomeconcelho>Macedo de Cavaleiros</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>699.27</area>
+				<populacao>16766</populacao>
+				<densidadepopulacional>23</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="53">
+				<idmunicipio>53</idmunicipio>
+				<nomeconcelho>Miranda do Douro</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>488.36</area>
+				<populacao>7295</populacao>
+				<densidadepopulacional>15</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Castelo de Miranda do Douro</nome>
+						<tipo>Património</tipo>
+					</interesse>
+          <interesse idinteresse="2">
+						<idinteresse>2</idinteresse>
+						<nome>Pauliteiros de Miranda</nome>
+						<tipo>Cultura</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="54">
+				<idmunicipio>54</idmunicipio>
+				<nomeconcelho>Mirandela</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>658.97</area>
+				<populacao>25458</populacao>
+				<densidadepopulacional>39</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Alheira</nome>
+						<tipo>Gastronomia e vinhos</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="55">
+				<idmunicipio>55</idmunicipio>
+				<nomeconcelho>Mogadouro</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>757.98</area>
+				<populacao>10289</populacao>
+				<densidadepopulacional>14</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Castelo de Mogadouro</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="56">
+				<idmunicipio>56</idmunicipio>
+				<nomeconcelho>Torre de Moncorvo</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>532.77</area>
+				<populacao>8829</populacao>
+				<densidadepopulacional>17</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="57">
+				<idmunicipio>57</idmunicipio>
+				<nomeconcelho>Vila Flor</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>265.52</area>
+				<populacao>7432</populacao>
+				<densidadepopulacional>28</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="58">
+				<idmunicipio>58</idmunicipio>
+				<nomeconcelho>Vimioso</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>481.47</area>
+				<populacao>4857</populacao>
+				<densidadepopulacional>10</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="59">
+				<idmunicipio>59</idmunicipio>
+				<nomeconcelho>Vinhais</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>694.68</area>
+				<populacao>9388</populacao>
+				<densidadepopulacional>14</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Castelo de Vinhais</nome>
+						<tipo>Património</tipo>
+					</interesse>
+          <interesse idinteresse="2">
+						<idinteresse>2</idinteresse>
+						<nome>Butelo</nome>
+						<tipo>Gastronomia e vinho</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+		</municipios>
+	</distrito>
+	<distrito iddistrito="5">
+		<iddistrito>5</iddistrito>
+		<nomedistrito>Castelo Branco</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="60">
+				<idmunicipio>60</idmunicipio>
+				<nomeconcelho>Belmonte</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>114.56</area>
+				<populacao>6859</populacao>
+				<densidadepopulacional>68</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Castelo de Belmonte</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="61">
+				<idmunicipio>61</idmunicipio>
+				<nomeconcelho>Castelo Branco</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>1438.16</area>
+				<populacao>56109</populacao>
+				<densidadepopulacional>37</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Castelo de Castelo Branco</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="62">
+				<idmunicipio>62</idmunicipio>
+				<nomeconcelho>Covilhã</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>555.61</area>
+				<populacao>51797</populacao>
+				<densidadepopulacional>93</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Senhora da Boa Estrela</nome>
+						<tipo>Património</tipo>
+					</interesse>
+          <interesse idinteresse="2">
+						<idinteresse>2</idinteresse>
+						<nome>Aldeia de São Francisco de Assis</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="63">
+				<idmunicipio>63</idmunicipio>
+				<nomeconcelho>Fundão</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>700.13</area>
+				<populacao>29213</populacao>
+				<densidadepopulacional>44</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Aldeia do Xisto da Barroca</nome>
+						<tipo>Património</tipo>
+					</interesse>
+          <interesse idinteresse="2">
+						<idinteresse>1</idinteresse>
+						<nome>Cereija do Fundão</nome>
+						<tipo>Gastronomia e vinho</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="64">
+				<idmunicipio>64</idmunicipio>
+				<nomeconcelho>Idanha-a-Nova</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>1412.73</area>
+				<populacao>9716</populacao>
+				<densidadepopulacional>7</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="65">
+				<idmunicipio>65</idmunicipio>
+				<nomeconcelho>Oleiros</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>465.52</area>
+				<populacao>5721</populacao>
+				<densidadepopulacional>12</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="66">
+				<idmunicipio>66</idmunicipio>
+				<nomeconcelho>Penamacor</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>555.52</area>
+				<populacao>5682</populacao>
+				<densidadepopulacional>10</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Reserva Natural da Serra da Malcata</nome>
+						<tipo>Lazer</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="67">
+				<idmunicipio>67</idmunicipio>
+				<nomeconcelho>Proença-a-Nova</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>395.26</area>
+				<populacao>8314</populacao>
+				<densidadepopulacional>22</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="68">
+				<idmunicipio>68</idmunicipio>
+				<nomeconcelho>Sertã</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>446.7</area>
+				<populacao>15880</populacao>
+				<densidadepopulacional>35</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Castelo da Sertã</nome>
+						<tipo>Património</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+      <municipio idmunicipio="69">
+				<idmunicipio>69</idmunicipio>
+				<nomeconcelho>Vila de Rei</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>191.26</area>
+				<populacao>3452</populacao>
+				<densidadepopulacional>16</densidadepopulacional>
+			</municipio>
+      <municipio idmunicipio="70">
+				<idmunicipio>70</idmunicipio>
+				<nomeconcelho>Vila Velha de Ródão</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>329.93</area>
+				<populacao>3521</populacao>
+				<densidadepopulacional>10</densidadepopulacional>
+        <interesses>
+					<interesse idinteresse="1">
+						<idinteresse>1</idinteresse>
+						<nome>Postas de Ródão</nome>
+						<tipo>Lazer</tipo>
+					</interesse>
+				</interesses>
+			</municipio>
+		</municipios>
+	</distrito>
+  <distrito iddistrito="5">
 		<iddistrito>5</iddistrito>
 		<nomedistrito>Coimbra</nomedistrito>
 		<municipios>
