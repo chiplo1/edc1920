@@ -15,6 +15,16 @@ def main(request):
 
     return render(request, 'newmain.html', {"send": send})
 
+def distritos(request):
+    doc = etree.parse("portugal.xml")
+    search = doc.xpath("//distrito")
+
+    send = {}
+
+    for s in search:
+        send[s.find("nomedistrito").text] = s.find("iddistrito").text
+
+    return render(request, 'main.html', {"send": send})
 
 def distritoDetail(request):
     data = request.GET
