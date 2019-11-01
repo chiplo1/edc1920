@@ -23,6 +23,7 @@ urlpatterns = [
     path('', views.main, name=''),
     path('distritos/', views.distritos, name='distritos'),
     path('distritoDetail/', views.distritoDetail, name='distritoDetail'),
+    path('municipioDetail/', views.municipioDetail, name='municipioDetail'),
     path('labelList/', views.labelList, name='labelList')
 ]
 

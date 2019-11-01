@@ -6,10 +6,15 @@
 </head>
 <body>
     {% for key,value in send.items %}
-        <form action="/labelList/" method='get'>
-            <h4>{{ key }} : {{ value }}</h4>
+        <form action="/municipioDetail/" method='get'>
+
             {% if key == "municipios" and value != None %}
-                <button name=id value = {{ key }} class="btn"> Ver Lista</button>
+                {% for key,value in send.municipios.items %}
+                <h4>{{ value }}</h4>
+                <button name=id value = {{ key }} class="btn"> Ver Detalhes</button>
+                {% endfor %}
+            {% else %}
+                <h3>{{ key }} : {{ value }}</h3>
             {% endif %}
         </form>
     {% endfor %}
