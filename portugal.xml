@@ -1899,6 +1899,949 @@
         </municipios>
     </distrito>
 
+    <distrito iddistrito="11">
+		<iddistrito>11</iddistrito>
+		<nomedistrito>Lisboa</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="201">
+				<idmunicipio>201</idmunicipio>
+				<nomeconcelho>Alenquer</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>304,22</area>
+				<populacao>43267</populacao>
+				<densidadepopulacional>142,2</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="202">
+				<idmunicipio>202</idmunicipio>
+				<nomeconcelho>Amadora</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>23,79</area>
+				<populacao>175136</populacao>
+				<densidadepopulacional>7361,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="203">
+				<idmunicipio>203</idmunicipio>
+				<nomeconcelho>Arruada dos Vinhos</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>77,96</area>
+				<populacao>13391</populacao>
+				<densidadepopulacional>171,8</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="204">
+				<idmunicipio>204</idmunicipio>
+				<nomeconcelho>Azambuja</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>262,66</area>
+				<populacao>21814</populacao>
+				<densidadepopulacional>83,1</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="205">
+				<idmunicipio>205</idmunicipio>
+				<nomeconcelho>Cadaval</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>174,89</area>
+				<populacao>14228</populacao>
+				<densidadepopulacional>81,4</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="206">
+				<idmunicipio>206</idmunicipio>
+				<nomeconcelho>Cascais</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>97,40</area>
+				<populacao>210889</populacao>
+				<densidadepopulacional>2165,18</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="207">
+				<idmunicipio>207</idmunicipio>
+				<nomeconcelho>Lisboa</nomeconcelho>
+				<regiao>Lisboa</regiao>
+				<area>100,05</area>
+				<populacao>506892</populacao>
+				<densidadepopulacional>5066,4</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="208">
+				<idmunicipio>208</idmunicipio>
+				<nomeconcelho>Loures</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>167,24</area>
+				<populacao>205054</populacao>
+				<densidadepopulacional>1226,10</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="209">
+				<idmunicipio>209</idmunicipio>
+				<nomeconcelho>Lourinhã</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>147,17</area>
+				<populacao>25735</populacao>
+				<densidadepopulacional>174,9</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="210">
+				<idmunicipio>210</idmunicipio>
+				<nomeconcelho>Mafra</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>291,66</area>
+				<populacao>76685</populacao>
+				<densidadepopulacional>262,9</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="211">
+				<idmunicipio>211</idmunicipio>
+				<nomeconcelho>Odivelas</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>26,54</area>
+				<populacao>144 549</populacao>
+				<densidadepopulacional>446,5</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="212">
+				<idmunicipio>212</idmunicipio>
+				<nomeconcelho>Oeiras</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>45,88</area>
+				<populacao>173149</populacao>
+				<densidadepopulacional>3773,95</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="213">
+				<idmunicipio>213</idmunicipio>
+				<nomeconcelho>Sintra</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>319,23</area>
+				<populacao>381728</populacao>
+				<densidadepopulacional>1195,77</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="214">
+				<idmunicipio>214</idmunicipio>
+				<nomeconcelho>Sobral de Monte Agraço</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>52,10</area>
+				<populacao>10156</populacao>
+				<densidadepopulacional>194,9</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="215">
+				<idmunicipio>215</idmunicipio>
+				<nomeconcelho>Torres Vedras</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>407,15</area>
+				<populacao>79465</populacao>
+				<densidadepopulacional>195,2</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="216">
+				<idmunicipio>216</idmunicipio>
+				<nomeconcelho>Vila Franca de Xira</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>318,19</area>
+				<populacao>136886</populacao>
+				<densidadepopulacional>430,2</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+        </municipios>
+    </distrito>
+    <distrito iddistrito="12">
+		<iddistrito>12</iddistrito>
+		<nomedistrito>Portalegre</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="217">
+				<idmunicipio>217</idmunicipio>
+				<nomeconcelho>Alter do Chão</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>362,07</area>
+				<populacao>3562</populacao>
+				<densidadepopulacional>9,8</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="218">
+				<idmunicipio>218</idmunicipio>
+				<nomeconcelho>Arronches</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>314,65</area>
+				<populacao>3165</populacao>
+				<densidadepopulacional>10,1</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="219">
+				<idmunicipio>219</idmunicipio>
+				<nomeconcelho>Avis</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>605,97</area>
+				<populacao>4571</populacao>
+				<densidadepopulacional>7,5</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="220">
+				<idmunicipio>220</idmunicipio>
+				<nomeconcelho>Campo Maior</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>247,20</area>
+				<populacao>8456</populacao>
+				<densidadepopulacional>34,2</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="221">
+				<idmunicipio>221</idmunicipio>
+				<nomeconcelho>Castelo de Vide</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>264,91</area>
+				<populacao>3407</populacao>
+				<densidadepopulacional>12,9</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="222">
+				<idmunicipio>222</idmunicipio>
+				<nomeconcelho>Crato</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>398,07</area>
+				<populacao>3708</populacao>
+				<densidadepopulacional>9,3</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="223">
+				<idmunicipio>223</idmunicipio>
+				<nomeconcelho>Elvas</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>631,29</area>
+				<populacao>23078</populacao>
+				<densidadepopulacional>36,6</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="224">
+				<idmunicipio>224</idmunicipio>
+				<nomeconcelho>Fronteira</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>248,60</area>
+				<populacao>3410</populacao>
+				<densidadepopulacional>13,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="225">
+				<idmunicipio>225</idmunicipio>
+				<nomeconcelho>Gavião</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>294,59</area>
+				<populacao>4132</populacao>
+				<densidadepopulacional>14</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="226">
+				<idmunicipio>226</idmunicipio>
+				<nomeconcelho>Marvão</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>154,90</area>
+				<populacao>35125</populacao>
+				<densidadepopulacional>22,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="227">
+				<idmunicipio>227</idmunicipio>
+				<nomeconcelho>Monforte</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>420,25</area>
+				<populacao>3329</populacao>
+				<densidadepopulacional>7,9</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="228">
+				<idmunicipio>228</idmunicipio>
+				<nomeconcelho>Nisa</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>575,68</area>
+				<populacao>7450</populacao>
+				<densidadepopulacional>12,9</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="229">
+				<idmunicipio>229</idmunicipio>
+				<nomeconcelho>Ponte de Sor</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>839,71</area>
+				<populacao>16722</populacao>
+				<densidadepopulacional>19,9</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="230">
+				<idmunicipio>230</idmunicipio>
+				<nomeconcelho>Portalegre</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>447,14</area>
+				<populacao>24930</populacao>
+				<densidadepopulacional>55,8</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="231">
+				<idmunicipio>231</idmunicipio>
+				<nomeconcelho>Sousel</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>279,32</area>
+				<populacao>5762</populacao>
+				<densidadepopulacional>20,6</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+        </municipios>
+    </distrito>
+    <distrito iddistrito="13">
+		<iddistrito>13</iddistrito>
+		<nomedistrito>Porto</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="232">
+				<idmunicipio>232</idmunicipio>
+				<nomeconcelho>Amarante</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>301,33</area>
+				<populacao>56264</populacao>
+				<densidadepopulacional>186,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="233">
+				<idmunicipio>233</idmunicipio>
+				<nomeconcelho>Baião</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>174,53</area>
+				<populacao>20522</populacao>
+				<densidadepopulacional>117,6</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="234">
+				<idmunicipio>234</idmunicipio>
+				<nomeconcelho>Felgueiras</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>115,74</area>
+				<populacao>58065</populacao>
+				<densidadepopulacional>501,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="235">
+				<idmunicipio>235</idmunicipio>
+				<nomeconcelho>Gondomar</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>131,86</area>
+				<populacao>173159</populacao>
+				<densidadepopulacional>1313,2</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="236">
+				<idmunicipio>236</idmunicipio>
+				<nomeconcelho>Lousada</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>96,08</area>
+				<populacao>47387</populacao>
+				<densidadepopulacional>493,2</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="237">
+				<idmunicipio>237</idmunicipio>
+				<nomeconcelho>Maia</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>82,99</area>
+				<populacao>135678</populacao>
+				<densidadepopulacional>1634,9</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="238">
+				<idmunicipio>238</idmunicipio>
+				<nomeconcelho>Marco de Canaveses</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>201,89</area>
+				<populacao>53450</populacao>
+				<densidadepopulacional>264,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="239">
+				<idmunicipio>239</idmunicipio>
+				<nomeconcelho>Matosinhos</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>62,42</area>
+				<populacao>175478</populacao>
+				<densidadepopulacional>2811,2</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="240">
+				<idmunicipio>240</idmunicipio>
+				<nomeconcelho>Paços de Ferreira</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>70,99</area>
+				<populacao>56340</populacao>
+				<densidadepopulacional>93,6</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="241">
+				<idmunicipio>241</idmunicipio>
+				<nomeconcelho>Paredes</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>156,76</area>
+				<populacao>86854</populacao>
+				<densidadepopulacional>554,1</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="242">
+				<idmunicipio>242</idmunicipio>
+				<nomeconcelho>Penafiel</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>212,24</area>
+				<populacao>72265</populacao>
+				<densidadepopulacional>340,5</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="243">
+				<idmunicipio>243</idmunicipio>
+				<nomeconcelho>Porto</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>41,42</area>
+				<populacao>237591</populacao>
+				<densidadepopulacional>5736,1</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="244">
+				<idmunicipio>244</idmunicipio>
+				<nomeconcelho>Póvoa do Varzim</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>82,21</area>
+				<populacao>63408</populacao>
+				<densidadepopulacional>771,3</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="245">
+				<idmunicipio>245</idmunicipio>
+				<nomeconcelho>Santo Tirso</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>136,6</area>
+				<populacao>71530</populacao>
+				<densidadepopulacional>523,6</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="246">
+				<idmunicipio>246</idmunicipio>
+				<nomeconcelho>Trofa</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>72,02</area>
+				<populacao>49897</populacao>
+				<densidadepopulacional>692,8</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="247">
+				<idmunicipio>247</idmunicipio>
+				<nomeconcelho>Valongo</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>75,12</area>
+				<populacao>93858</populacao>
+				<densidadepopulacional>1249,4</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="248">
+				<idmunicipio>248</idmunicipio>
+				<nomeconcelho>Vila do Conde</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>149,03</area>
+				<populacao>79533</populacao>
+				<densidadepopulacional>533,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="249">
+				<idmunicipio>249</idmunicipio>
+				<nomeconcelho>Vila Nova de Gaia</nomeconcelho>
+				<regiao>Norte</regiao>
+				<area>168,46</area>
+				<populacao>301496</populacao>
+				<densidadepopulacional>1789,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+        </municipios>
+    </distrito>
+    <distrito iddistrito="14">
+		<iddistrito>14</iddistrito>
+		<nomedistrito>Santarém</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="250">
+				<idmunicipio>250</idmunicipio>
+				<nomeconcelho>Abrantes</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>714,69</area>
+				<populacao>39325</populacao>
+				<densidadepopulacional>55</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="251">
+				<idmunicipio>251</idmunicipio>
+				<nomeconcelho>Alcanena</nomeconcelho>
+				<regiao>Centre</regiao>
+				<area>137,33</area>
+				<populacao>20604</populacao>
+				<densidadepopulacional>150</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="252">
+				<idmunicipio>252</idmunicipio>
+				<nomeconcelho>Almeirim</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>222,12</area>
+				<populacao>23376</populacao>
+				<densidadepopulacional>105,2</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="253">
+				<idmunicipio>253</idmunicipio>
+				<nomeconcelho>Alpiarça</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>95,36</area>
+				<populacao>7702</populacao>
+				<densidadepopulacional>80,77</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="254">
+				<idmunicipio>254</idmunicipio>
+				<nomeconcelho>Benavente</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>521,38</area>
+				<populacao>49019</populacao>
+				<densidadepopulacional>94</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="255">
+				<idmunicipio>255</idmunicipio>
+				<nomeconcelho>Cartaxo</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>158,17</area>
+				<populacao>24462</populacao>
+				<densidadepopulacional>154,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="256">
+				<idmunicipio>256</idmunicipio>
+				<nomeconcelho>Chamusca</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>746,01</area>
+				<populacao>10120</populacao>
+				<densidadepopulacional>13,6</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="257">
+				<idmunicipio>257</idmunicipio>
+				<nomeconcelho>Constância</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>80,37</area>
+				<populacao>4056</populacao>
+				<densidadepopulacional>50,5</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="258">
+				<idmunicipio>258</idmunicipio>
+				<nomeconcelho>Coruche</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>1115,72</area>
+				<populacao>19944</populacao>
+				<densidadepopulacional>17,9</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="259">
+				<idmunicipio>259</idmunicipio>
+				<nomeconcelho>Entroncamento</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>13,73</area>
+				<populacao>20206</populacao>
+				<densidadepopulacional>1471,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="260">
+				<idmunicipio>260</idmunicipio>
+				<nomeconcelho>Ferreira do Zêzere</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>190,38</area>
+				<populacao>8619</populacao>
+				<densidadepopulacional>45,3</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="261">
+				<idmunicipio>261</idmunicipio>
+				<nomeconcelho>Golegã</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>84,32</area>
+				<populacao>5913</populacao>
+				<densidadepopulacional>70,1</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="262">
+				<idmunicipio>262</idmunicipio>
+				<nomeconcelho>Mação</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>399,98</area>
+				<populacao>7338</populacao>
+				<densidadepopulacional>18,3</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="263">
+				<idmunicipio>263</idmunicipio>
+				<nomeconcelho>Ourém</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>416,68</area>
+				<populacao>45932</populacao>
+				<densidadepopulacional>110,2</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="264">
+				<idmunicipio>264</idmunicipio>
+				<nomeconcelho>Rio Maior</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>272,76</area>
+				<populacao>21192</populacao>
+				<densidadepopulacional>77,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="265">
+				<idmunicipio>265</idmunicipio>
+				<nomeconcelho>Salvaterra de Magos</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>243,93</area>
+				<populacao>22159</populacao>
+				<densidadepopulacional>90,8</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="266">
+				<idmunicipio>266</idmunicipio>
+				<nomeconcelho>Santarém</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>552,54</area>
+				<populacao>61752</populacao>
+				<densidadepopulacional>111,8</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="267">
+				<idmunicipio>267</idmunicipio>
+				<nomeconcelho>Sardoal</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>92,15</area>
+				<populacao>3939</populacao>
+				<densidadepopulacional>42,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="268">
+				<idmunicipio>268</idmunicipio>
+				<nomeconcelho>Tomar</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>351,2</area>
+				<populacao>41000</populacao>
+				<densidadepopulacional>116,74</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="269">
+				<idmunicipio>269</idmunicipio>
+				<nomeconcelho>Torres Novas</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>270</area>
+				<populacao>36338</populacao>
+				<densidadepopulacional>134,6</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="270">
+				<idmunicipio>270</idmunicipio>
+				<nomeconcelho>Vila Nova da Barquinha</nomeconcelho>
+				<regiao>Centro</regiao>
+				<area>49,53</area>
+				<populacao>7322</populacao>
+				<densidadepopulacional>147,8</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+        </municipios>
+    </distrito>
+    <distrito iddistrito="15">
+		<iddistrito>15</iddistrito>
+		<nomedistrito>Setúbal</nomedistrito>
+		<municipios>
+			<municipio idmunicipio="271">
+				<idmunicipio>271</idmunicipio>
+				<nomeconcelho>Alcácer do Sal</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>1499,87</area>
+				<populacao>13046</populacao>
+				<densidadepopulacional>8,7</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="272">
+				<idmunicipio>272</idmunicipio>
+				<nomeconcelho>Alcochete</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>128,36</area>
+				<populacao>17569</populacao>
+				<densidadepopulacional>136,9</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="273">
+				<idmunicipio>273</idmunicipio>
+				<nomeconcelho>Almada</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>70,21</area>
+				<populacao>168027</populacao>
+				<densidadepopulacional>2393,2</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="274">
+				<idmunicipio>274</idmunicipio>
+				<nomeconcelho>Barreiro</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>36,39</area>
+				<populacao>78764</populacao>
+				<densidadepopulacional>2164,44</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="275">
+				<idmunicipio>275</idmunicipio>
+				<nomeconcelho>Grândola</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>825,94</area>
+				<populacao>14826</populacao>
+				<densidadepopulacional>18</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="276">
+				<idmunicipio>276</idmunicipio>
+				<nomeconcelho>Moita</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>55,26</area>
+				<populacao>66029</populacao>
+				<densidadepopulacional>1194,9</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="277">
+				<idmunicipio>277</idmunicipio>
+				<nomeconcelho>Montijo</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>348,62</area>
+				<populacao>57543</populacao>
+				<densidadepopulacional>165,1</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="278">
+				<idmunicipio>278</idmunicipio>
+				<nomeconcelho>Palmela</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>465,12</area>
+				<populacao>62831</populacao>
+				<densidadepopulacional>135,1</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="279">
+				<idmunicipio>279</idmunicipio>
+				<nomeconcelho>Santiago do Cacém</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>1059,77</area>
+				<populacao>29749</populacao>
+				<densidadepopulacional>28,1</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="280">
+				<idmunicipio>280</idmunicipio>
+				<nomeconcelho>Seixal</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>95,50</area>
+				<populacao>158269</populacao>
+				<densidadepopulacional>1657,3</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="281">
+				<idmunicipio>281</idmunicipio>
+				<nomeconcelho>Sesimbra</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>195,47</area>
+				<populacao>49500</populacao>
+				<densidadepopulacional>253,23</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="282">
+				<idmunicipio>282</idmunicipio>
+				<nomeconcelho>Setúbal</nomeconcelho>
+				<regiao>Área Metropolitana de Lisboa</regiao>
+				<area>230,33</area>
+				<populacao>116330</populacao>
+				<densidadepopulacional>505,1</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+            <municipio idmunicipio="283">
+				<idmunicipio>283</idmunicipio>
+				<nomeconcelho>Sines</nomeconcelho>
+				<regiao>Alentejo</regiao>
+				<area>132,42</area>
+				<populacao>14238</populacao>
+				<densidadepopulacional>107,5</densidadepopulacional>
+				<interesses>
+
+                </interesses>
+            </municipio>
+        </municipios>
+    </distrito>
 
 	<distrito iddistrito="16">
 		<iddistrito>16</iddistrito>
