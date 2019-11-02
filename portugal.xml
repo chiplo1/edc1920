@@ -975,14 +975,9 @@
 			</municipio>
 		</municipios>
 	</distrito>
-<<<<<<< HEAD
-  
-  <distrito iddistrito="5">
-		<iddistrito>5</iddistrito>
-=======
+
   <distrito iddistrito="6">
 		<iddistrito>6</iddistrito>
->>>>>>> 18b142d0ab3e2e301b72672f92da6f952c78113c
 		<nomedistrito>Coimbra</nomedistrito>
 		<municipios>
 			<municipio idmunicipio="101">
