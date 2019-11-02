@@ -975,9 +975,14 @@
 			</municipio>
 		</municipios>
 	</distrito>
+<<<<<<< HEAD
   
   <distrito iddistrito="5">
 		<iddistrito>5</iddistrito>
+=======
+  <distrito iddistrito="6">
+		<iddistrito>6</iddistrito>
+>>>>>>> 18b142d0ab3e2e301b72672f92da6f952c78113c
 		<nomedistrito>Coimbra</nomedistrito>
 		<municipios>
 			<municipio idmunicipio="101">
@@ -1184,9 +1189,9 @@
         </municipios>
     </distrito>
 
-     <distrito iddistrito="6">
-		<iddistrito>6</iddistrito>
-		<nomedistrito>Coimbra</nomedistrito>
+     <distrito iddistrito="7">
+		<iddistrito>7</iddistrito>
+		<nomedistrito>Évora</nomedistrito>
 		<municipios>
 			<municipio idmunicipio="118">
 				<idmunicipio>118</idmunicipio>
@@ -1345,8 +1350,8 @@
         </municipios>
      </distrito>
 
-    <distrito iddistrito="7">
-		<iddistrito>7</iddistrito>
+    <distrito iddistrito="8">
+		<iddistrito>8</iddistrito>
 		<nomedistrito>Faro</nomedistrito>
 		<municipios>
 			<municipio idmunicipio="132">
@@ -1528,8 +1533,8 @@
         </municipios>
     </distrito>
 
-    <distrito iddistrito="8">
-		<iddistrito>8</iddistrito>
+    <distrito iddistrito="9">
+		<iddistrito>9</iddistrito>
 		<nomedistrito>Guarda</nomedistrito>
 		<municipios>
 			<municipio idmunicipio="148">
@@ -1700,8 +1705,8 @@
         </municipios>
     </distrito>
 
-    <distrito iddistrito="9">
-		<iddistrito>9</iddistrito>
+    <distrito iddistrito="10">
+		<iddistrito>10</iddistrito>
 		<nomedistrito>Leiria</nomedistrito>
 		<municipios>
 			<municipio idmunicipio="162">
