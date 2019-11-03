@@ -38,15 +38,19 @@ def distritoDetail(request):
 
     for s in search:
         send["nomedistrito"] = s.find("nomedistrito").text
-        send["iddistrito"] = s.find("iddistrito").text
         municipios = s.findall("municipios/municipio")
+        interesses = s.findall("interesses/interesse")
 
     listanomes = {}
     for x in municipios:
         listanomes[x.find("idmunicipio").text] = x.find("nomeconcelho").text
 
-    send["municipios"] = listanomes
+    listainteresses = {}
+    for x in interesses:
+        listainteresses[x.find("iddistrito").text] = x.find("nome").text
 
+    send["municipios"] = listanomes
+    send["interesses"] = listainteresses
     return render(request, 'distritoDetail.html', {"send": send})
 
 def municipioDetail(request):
@@ -84,3 +88,19 @@ def labelList(request):
 
     print(set(send))
     return render(request, 'labelList.html', {"send": set(send)})
+
+
+def interesseDetail(request):
+    data = request.GET
+    id = data['id']
+    doc = etree.parse("portugal.xml")
+    string = '//interesse[idinteresse="{}"]'.format(id)
+
+    search = doc.xpath(string)
+
+    send = {}
+
+    for s in search:
+        send["nome"] = s.find("nome").text
+        send["tipo"] = s.find("tipo").text
+    return render(request, 'municipioDetail.html', {"send": send})
