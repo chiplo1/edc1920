@@ -53,6 +53,8 @@
   </style>
 </head>
 <body>
+<br>
+<br>
 <nav class="navbar navbar-inverse navbar-fixed-top" >
   <div class="container-fluid">
     <div class="navbar-header">
@@ -65,58 +67,19 @@
     <div class="collapse navbar-collapse navbar-fixed-top" id="myNavbar">
       <ul class="nav navbar-nav">
         <li ><a href="/">Home</a></li>
-        <li><a href="/distritos">Portugal</a></li>
-        <li><a href="/interesses">Interesses</a></li>
-        <li><a href="/sobre">Sobre o Site</a></li>
+        <li ><a href="/distritos">Portugal</a></li>
+        <li ><a href="/interesses">Interesses</a></li>
+        <li ><a href="/sobre">Sobre o Site</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-    {% for key,value in send.items %}
-        <form action="/municipioDetail/" method='get'>
-
-            {% if key == "municipios" and value != None %}
-                <br>
-            {% else %}
-                <img class="crop" src="{% static "images/RiaAveiro.jpeg" %}" style="width:100%" alt="Image">
-                <h1 align="center">{{value}}</h1>
-                <br>
-            {% endif %}
-        </form>
-    {% endfor %}
-
-<div class="row">
-  <div class="column" style="background-color:#FFFFFF;">
-      <h3><span class="tab">Múnicipios pertencentes a {{value}}: </span></h3>
-        {% for key,value in send.items %}
-            <form action="/municipioDetail/" method='get'>
-                {% if key == "municipios" and value != None %}
-                    {% for key,value in send.municipios.items %}
-                        <h4><span class="minortab">{{value}} <button name=id value = {{ key }} class="btn"> Ver Detalhes</button></span></h4>
-                        <br>
-                    {% endfor %}
-                {% else %}
-                    <br>
-                {% endif %}
-            </form>
-        {% endfor %}
-  </div>
 
   <div class="column" style="background-color:#FFFFFF;">
-      <h3><span class="tab">Interesses:</span></h3>
-      <br>
+
       {% for key,value in send.items %}
-            <form action="/interesseDetail/" method='get'>
-                {% if key == "interesses" and value != None %}
-                    {% for key,value in send.interesses.items %}
-                        <h4><span class="minortab">{{value}}</span></h4>
-                        <br>
-                    {% endfor %}
-                {% else %}
-                    <br>
-                {% endif %}
-            </form>
+            <h4>{{ key }} : {{ value }}</h4>
         {% endfor %}
   </div>
 </div>

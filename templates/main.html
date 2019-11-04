@@ -2,7 +2,7 @@
 {% load static %}
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Portugal</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"  type="text/css" href="{% static 'css/crop.css' %}">
@@ -51,15 +51,17 @@
     <div class="collapse navbar-collapse navbar-fixed-top" id="myNavbar">
       <ul class="nav navbar-nav">
         <li ><a href="/">Home</a></li>
-        <li class="active"><a href="#">Portugal</a></li>
-        <li><a href="#">Interesses</a></li>
-        <li><a href="#">Sobre o Site</a></li>
+        <li class="active"><a href="/distritos">Portugal</a></li>
+        <li><a href="/interesses">Interesses</a></li>
+        <li><a href="/sobre">Sobre o Site</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
-<h3>Mapa clicável de Portugal Continental</h3>
+<div>
+    <br>
+    <br>
+<h1>Mapa clicável de Portugal Continental</h1>
           <img src="{% static "images/portugal.jpg" %}" alt="Portugal" usemap="#portugal">
             <map name="portugal">
               <area shape="poly" coords="36,13,123,2,125,30,41,62" href="/distritoDetail/?id=16" alt="Viana do Castelo">

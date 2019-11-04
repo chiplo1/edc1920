@@ -2,7 +2,7 @@
 {% load static %}
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Portugal</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"  type="text/css" href="{% static 'css/crop.css' %}">
@@ -50,10 +50,10 @@
     </div>
     <div class="collapse navbar-collapse navbar-fixed-top" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="/">Home</a></li>
         <li><a href="/distritos">Portugal</a></li>
-        <li><a href="#">Interesses</a></li>
-        <li><a href="#">Sobre o Site</a></li>
+        <li><a href="/interesses">Interesses</a></li>
+        <li><a href="/sobre">Sobre o Site</a></li>
       </ul>
     </div>
   </div>
@@ -82,7 +82,9 @@
       <p>Religião - Fátima</p>
     </div>
     <div class="col-sm-4">
-      <img class="crop" src="{% static "images/RiaAveiro.jpeg" %}" style="width:100%" alt="Image">
+        <a href="/interesseDetail/?id=3">
+            <img class="crop" src="{% static "images/RiaAveiro.jpeg" %}" style="width:100%" alt="Image">
+        </a>
       <p>Ria de Aveiro</p>
     </div>
     <div class="col-sm-4">

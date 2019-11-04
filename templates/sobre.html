@@ -53,8 +53,6 @@
   </style>
 </head>
 <body>
-<br>
-<br>
 <nav class="navbar navbar-inverse navbar-fixed-top" >
   <div class="container-fluid">
     <div class="navbar-header">
@@ -69,21 +67,14 @@
         <li ><a href="/">Home</a></li>
         <li ><a href="/distritos">Portugal</a></li>
         <li ><a href="/interesses">Interesses</a></li>
-        <li ><a href="/sobre">Sobre o Site</a></li>
+        <li class="active"><a href="/sobre">Sobre o Site</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
-
-  <div class="column" style="background-color:#FFFFFF;">
-
-      {% for key,value in send.items %}
-            <h4>{{ key }} : {{ value }}</h4>
-      {% endfor %}
-  </div>
+<br>
+<br>
+<h1>Algo sobre o site</h1>
 
 </body>
 </html>
-
-

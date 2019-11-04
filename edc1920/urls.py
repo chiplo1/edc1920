@@ -24,6 +24,9 @@ urlpatterns = [
     path('distritos/', views.distritos, name='distritos'),
     path('distritoDetail/', views.distritoDetail, name='distritoDetail'),
     path('municipioDetail/', views.municipioDetail, name='municipioDetail'),
+    path('interesseDetail/', views.interesseDetail, name='interesseDetail'),
+    path('interesses/', views.interesses, name='interesses'),
+    path('sobre/', views.sobre, name='sobre'),
     path('labelList/', views.labelList, name='labelList')
 ]
 

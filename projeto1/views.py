@@ -110,7 +110,7 @@ def interesseDetail(request):
 
         search = xmltodict.parse(query.execute())['interesse']
         query.close()
-        print(search)
+        #print(search)
     finally:
         if session:
             send = {'nome':search['nome'], 'tipo':search['tipo'], 'nomeconcelho':search['nomeconcelho'], 'nomedistrito':search['nomedistrito']}
@@ -118,6 +118,11 @@ def interesseDetail(request):
         print(send)
     return render(request, 'interesseDetail.html', {"send": send})
 
+def interesses(request):
+    return render(request, 'interesses.html', {"send": ''})
+
+def sobre(request):
+    return render(request, 'sobre.html', {"send": ''})
 
 def labelList(request):
     data = request.GET
@@ -131,7 +136,7 @@ def labelList(request):
     for s in search:
         send.append(s.text)
 
-    print(set(send))
+    #print(set(send))
     return render(request, 'labelList.html', {"send": set(send)})
 
 
