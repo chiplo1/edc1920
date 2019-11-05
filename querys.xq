@@ -17,7 +17,8 @@ declare function funcs:interesse ($id as xs:integer) as element()* {
 declare function funcs:distrito($id as xs:integer) as element()*{
   for $i in doc("portugal.xml")//distrito
   where $i/iddistrito = $id
-  return $i 
+  let $numpop := sum($i//populacao)
+   let $areatotal := sum($i//area)
+  let $densidadepop := $numpop div $areatotal
+  return <distrito>{ <numpopulacao>{$numpop}</numpopulacao>, <areatotal>{$areatotal}</areatotal>, <densidadedistrito>{$densidadepop}</densidadedistrito>, $i/iddistrito, $i/nomedistrito, $i/imagemdistrito, $i/municipios}</distrito>
 };
-(:<distrito>{local:distrito("2")}</distrito>:)
-

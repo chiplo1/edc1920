@@ -62,19 +62,22 @@ def distritoDetail(request):
     id = data['id']
     try:
         #create query instance
-        input = "import module namespace funcs = 'com.funcs.my.index';funcs:distrito({0})".format(id)
+        input = "import module namespace funcs = 'com.funcs.my.index';funcs:distrito({})".format(id)
         query = session.query(input)
         response = query.execute()
+
         query.close()
 
     finally:
         if session:
-            search = xmltodict.parse(response)
             send = {}
-            send['nomedistrito'] = search['distrito']['nomedistrito']
-
-            for s in search['distrito']['municipios']['municipio']:
-                send[s['idmunicipio']] = s['nomeconcelho']
+            search = xmltodict.parse(response)['distrito']
+            send['nomedistrito'] = search['nomedistrito']
+            send['numpopulacao'] = search['numpopulacao']
+            send['areatotal'] = round(float(search['areatotal']), 2)
+            send['densidadedistrito'] = round(float(search['densidadedistrito']), 2)
+            for s in search['municipios']['municipio']:
+               send[s['idmunicipio']] = s['nomeconcelho']
             session.close()
     return render(request, 'distritoDetail.html', {"send": send})
 
