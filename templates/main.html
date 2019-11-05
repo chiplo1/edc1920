@@ -28,6 +28,13 @@
       margin: auto;
       min-height:200px;
   }
+      .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 22%;
+}
+
 
   /* Hide the carousel text when the screen is less than 600 pixels wide */
   @media (max-width: 600px) {
@@ -61,8 +68,8 @@
 <div>
     <br>
     <br>
-<h1>Mapa clicável de Portugal Continental</h1>
-          <img src="{% static "images/portugal.jpg" %}" alt="Portugal" usemap="#portugal">
+<h1 align="center">Mapa clicável de Portugal Continental</h1>
+          <img class="center" src="{% static "images/portugal.jpg" %}" alt="Portugal" usemap="#portugal">
             <map name="portugal">
               <area shape="poly" coords="36,13,123,2,125,30,41,62" href="/distritoDetail/?id=16" alt="Viana do Castelo">
 			  <area shape="poly" coords="73,56,128,36,145,78,92,79,74,68" href="/distritoDetail/?id=3" alt="Braga">
@@ -83,5 +90,6 @@
 			  <area shape="poly" coords="107,473,123,431,224,446,170,515,61,523,67,484" href="/distritoDetail/?id=2" alt="Beja">
 			  <area shape="square" coords="40,571,178,519" href="/distritoDetail/?id=8" alt="Faro">
             </map>
+</div>
 </body>
 </html>
