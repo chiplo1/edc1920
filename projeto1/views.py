@@ -72,6 +72,7 @@ def distritoDetail(request):
         if session:
             send = {}
             search = xmltodict.parse(response)['distrito']
+            print(search)
             send['nomedistrito'] = search['nomedistrito']
             send['numpopulacao'] = search['numpopulacao']
             send['areatotal'] = round(float(search['areatotal']), 2)
