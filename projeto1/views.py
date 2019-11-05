@@ -8,13 +8,32 @@ import xmltodict
 def main(request):
     doc = etree.parse("portugal.xml")
     search = doc.xpath("//distrito")
-
+    # create session
+    session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
     send = {}
-
+    infoportugal = {}
     for s in search:
         send[s.find("nomedistrito").text] = s.find("iddistrito").text
 
-    return render(request, 'newmain.html', {"send": send})
+    try:
+        input = '''
+        for $i in doc("portugal.xml")
+        let $dados := $i//municipio
+        let $totalpop := sum($dados/populacao)
+        let $totalarea := sum($dados/area)
+        let $densidadeportugal := $totalpop div $totalarea
+        return <portugal>{<totalpop>{xs:integer($totalpop)}</totalpop>, <totalarea>{$totalarea}</totalarea>, <densidadeportugal>{$densidadeportugal}</densidadeportugal>}</portugal>'''
+        query = session.query(input)
+        response = query.execute()
+        query.close()
+    finally:
+        if session:
+            search = xmltodict.parse(response)['portugal']
+            infoportugal['totalpop'] = search['totalpop']
+            infoportugal['totalarea'] = search['totalarea']
+            infoportugal['densidadeportugal'] = search['densidadeportugal']
+            session.close()
+    return render(request, 'newmain.html', {"send": send, "infoportugal": infoportugal})
 
 def distritos(request):
     doc = etree.parse("portugal.xml")
