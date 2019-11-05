@@ -126,18 +126,12 @@
       {% endfor %}
       <br>
       <br>
-      <h3><span class="tab">Interesses:</span>
+      <h3><span class="tab">Interesses:</span></h3>
       <br>
-          <form action="/municipioDetail/" method='get'>
-          {% if interesses %}
+          <form action="/interesseDetail/" method='get'>
                 {% for key, value in interesses.items %}
-                    {% if key != None and value != None %}
-                        <h4><span class="minortab"> {{value}}. </span></h4>
-                    {% else %}
-                        <br>
-                    {% endif %}
-                {% endfor %}
-          {% endif %}
+                    <h4><span class="minortab"><a href="/interesseDetail/?id={{ key }}" > {{value}} </a></span></h4>
+                 {% endfor %}
           </form>
   </div>
 

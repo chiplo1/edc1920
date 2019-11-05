@@ -71,14 +71,16 @@ def distritoDetail(request):
         input = "import module namespace funcs = 'com.funcs.my.index';funcs:interesseDist({})".format(id)
         query = session.query(input)
         response2 = query.execute()
-
         query.close()
     finally:
         if session:
             municipios = {}
             interesses = {}
             search = xmltodict.parse(response)['distrito']
-            search1 = xmltodict.parse(response2)['interesse']['interesse']
+            if not response2 == "<interesse/>":
+                search1 = xmltodict.parse(response2)['interesse']['interesse']
+            else:
+                search1 = ''
             municipios['imagemdistrito'] = search['imagemdistrito']
             municipios['nomedistrito'] = search['nomedistrito']
             municipios['numpopulacao'] = search['numpopulacao']
@@ -89,8 +91,6 @@ def distritoDetail(request):
                 municipios[s['idmunicipio']] = s['nomeconcelho']
             for m in search1:
                 interesses[m['idinteresse']] = m['nome']
-            
-
             session.close()
 
     return render(request, 'distritoDetail.html', {"municipios":municipios,"interesses":interesses})
@@ -134,7 +134,6 @@ def interesseDetail(request):
         if session:
             send = {'nome':search['nome'], 'tipo':search['tipo'], 'nomeconcelho':search['nomeconcelho'], 'nomedistrito':search['nomedistrito']}
             session.close()
-        print(send)
     return render(request, 'interesseDetail.html', {"send": send})
 
 def interesses(request):
