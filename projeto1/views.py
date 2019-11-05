@@ -68,19 +68,33 @@ def distritoDetail(request):
 
         query.close()
 
+        input = "import module namespace funcs = 'com.funcs.my.index';funcs:interesseDist({})".format(id)
+        query = session.query(input)
+        response2 = query.execute()
+
+        query.close()
     finally:
         if session:
-            send = {}
+            municipios = {}
+            interesses = {}
             search = xmltodict.parse(response)['distrito']
-            print(search)
-            send['nomedistrito'] = search['nomedistrito']
-            send['numpopulacao'] = search['numpopulacao']
-            send['areatotal'] = round(float(search['areatotal']), 2)
-            send['densidadedistrito'] = round(float(search['densidadedistrito']), 2)
+            search1 = xmltodict.parse(response2)['interesse']['interesse']
+            municipios['imagemdistrito'] = search['imagemdistrito']
+            municipios['nomedistrito'] = search['nomedistrito']
+            municipios['numpopulacao'] = search['numpopulacao']
+            municipios['areatotal'] = round(float(search['areatotal']), 2)
+            municipios['densidadedistrito'] = round(float(search['densidadedistrito']), 2)
+
             for s in search['municipios']['municipio']:
-               send[s['idmunicipio']] = s['nomeconcelho']
+                municipios[s['idmunicipio']] = s['nomeconcelho']
+            for m in search1:
+                interesses[m['idinteresse']] = m['nome']
+            
+
             session.close()
-    return render(request, 'distritoDetail.html', {"send": send})
+
+    return render(request, 'distritoDetail.html', {"municipios":municipios,"interesses":interesses})
+
 
 def municipioDetail(request):
     data = request.GET
@@ -99,6 +113,7 @@ def municipioDetail(request):
         send["area"] = s.find("area").text
         send["populacao"] = s.find("populacao").text
         send["densidadepopulacional"] = s.find("densidadepopulacional").text
+
 
     return render(request, 'municipioDetail.html', {"send": send})
 

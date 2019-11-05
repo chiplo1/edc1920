@@ -13,6 +13,15 @@ declare function funcs:interesse ($id as xs:integer) as element()* {
 };
 (:<interesse>{local:interesse("1")}</interesse>:)
 
+(:recebe um id de um distrito e retorna os seus interesses:)
+declare function funcs:interesseDist($id as xs:integer) as element()*{
+  for $i in doc("portugal.xml")//distrito
+  where $i/iddistrito = $id
+  let $interesse := $i//interesse
+  return<interesse>{$interesse}</interesse>
+};
+
+
 (:recebe id do distrito retorna toda a info perguntar como quer que retorne a info:)
 declare function funcs:distrito($id as xs:integer) as element()*{
   for $i in doc("portugal.xml")//distrito
