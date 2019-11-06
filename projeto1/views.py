@@ -24,14 +24,10 @@ def main(request):
         let $densidadeportugal := $totalpop div $totalarea
         return <portugal>{<totalpop>{xs:integer($totalpop)}</totalpop>, <totalarea>{$totalarea}</totalarea>, <densidadeportugal>{$densidadeportugal}</densidadeportugal>}</portugal>'''
         query = session.query(input)
-        response = query.execute()
-
+        search = xmltodict.parse(query.execute())['portugal']
         query.close()
-
-
     finally:
         if session:
-            search = xmltodict.parse(response)['portugal']
             infoportugal['totalpop'] = search['totalpop']
             infoportugal['totalarea'] = search['totalarea']
             infoportugal['densidadeportugal'] = search['densidadeportugal']
