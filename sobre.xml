@@ -1,0 +1,47 @@
+<?xml version = "1.0" ?>
+<?xml-stylesheet href="sobre.xsl" type="text/xsl" ?>
+
+<about>
+    <description>Esta webapp é o resultado do primeiro projeto de Engenharia de Dados e Conhecimento.
+        O tema baseia-se na exposição de informação de dados geográficos do país, juntamente com as suas atrações turísticas.</description>
+    <objectives>
+        <objective>
+            <name> XML (formato dos dados);</name>
+            <done>True</done>
+        </objective>
+        <objective>
+            <name> XML Schema (modelação e validação);</name>
+            <done>True</done>
+        </objective>
+        <objective>
+            <name> XPATH (filtragem de dados);</name>
+            <done>True</done>
+        </objective>
+        <objective>
+            <name> XSLT (transformação de dados);</name>
+            <done>True</done>
+        </objective>
+        <objective>
+            <name> BaseX (armazenamento de dados);</name>
+            <done>True</done>
+        </objective>
+        <objective>
+            <name> XQuery e XQuery Update (pesquisa e alteração dos dados na BD);</name>
+            <done>True</done>
+        </objective>
+        <objective>
+            <name> RSS e/ou Atom (recolha de dados externos).</name>
+            <done>True</done>
+        </objective>
+        <objective>
+            <name> Python/Django (programação da aplicação);</name>
+            <done>True</done>
+        </objective>
+    </objectives>
+    <authors>
+        <author>Fábio Nunes 80321</author>
+        <author>Guilherme Henriques 80100</author>
+        <author>José Cristiano 79671</author>
+        <author>Mariana Pinheiro 80186</author>
+    </authors>
+</about>
