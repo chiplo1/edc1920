@@ -43,3 +43,34 @@ declare function funcs:interesses($tipo as xs:string) as element()*{
   return <interesse>{$i/nome, $i/tipo, $m, $n/nomedistrito,$o, $i/idinteresse}</interesse>
   }</interesses>
 };
+
+declare
+updating function funcs:add($id as xs:integer, $nome as xs:string, $tipo as xs:string){
+for $i in doc("portugal.xml")//municipio
+let $lastid := $i//idinteresse[last()]
+where $i/idmunicipio = $id
+return( if (exists($i/interesses)) then (
+  insert node
+<interesse>
+  <idinteresse>$lastid+1</idinteresse>,
+  <nome>$nome</nome>,
+  <tipo>$tipo</tipo>
+</interesse>
+as last into $i/interesses
+)
+else (
+  insert node
+<interesses>
+ <interesse>
+   <idinteresse>$lastid+1</idinteresse>,
+  <nome>$nome</nome>,
+  <tipo>$tipo</tipo>
+ </interesse>
+</interesses> into $i ))
+};
+
+declare updating function funcs:deleteinteresse($id as xs:integer){
+  for $i in doc("portugal.xml")//interesses
+  where $i/interesse/idinteresse = $id
+  return delete node $i/interesse
+};
