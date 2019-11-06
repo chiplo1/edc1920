@@ -203,7 +203,7 @@ def interesses(request):
         send = {}
         cultura = {}
         for s in search1:
-            cultura[s['idinteresse']] = s['nome']
+            cultura[s['idinteresse']] = [s['nome'],s['regiao']]
         query1.close()
 
         input2="import module namespace funcs = 'com.funcs.my.index';funcs:interesses({})".format("'Lazer'")
@@ -211,7 +211,7 @@ def interesses(request):
         search2 = xmltodict.parse(query2.execute())['interesses']['interesse']
         lazer = {}
         for s in search2:
-            lazer[s['idinteresse']] = s['nome']
+            lazer[s['idinteresse']] = [s['nome'],s['regiao']]
         query2.close()
 
         input3 = "import module namespace funcs = 'com.funcs.my.index';funcs:interesses({})".format("'Gastronomia e vinhos'")
@@ -219,7 +219,7 @@ def interesses(request):
         search3 = xmltodict.parse(query3.execute())['interesses']['interesse']
         gastronomia = {}
         for s in search3:
-            gastronomia[s['idinteresse']] = s['nome']
+            gastronomia[s['idinteresse']] = [s['nome'],s['regiao']]
         query3.close()
 
         input4 = "import module namespace funcs = 'com.funcs.my.index';funcs:interesses({})".format("'Património'")
@@ -227,7 +227,7 @@ def interesses(request):
         search4 = xmltodict.parse(query4.execute())['interesses']['interesse']
         patrimonio = {}
         for s in search4:
-            patrimonio[s['idinteresse']] = s['nome']
+            patrimonio[s['idinteresse']] = [s['nome'],s['regiao']]
         query4.close()
 
     finally:
