@@ -38,13 +38,32 @@ def main(request):
 def distritos(request):
     doc = etree.parse("portugal.xml")
     search = doc.xpath("//distrito")
-
+    # create session
+    session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
     send = {}
-
+    infoportugal = {}
     for s in search:
         send[s.find("nomedistrito").text] = s.find("iddistrito").text
 
-    return render(request, 'main.html', {"send": send})
+    try:
+        input = '''
+            for $i in doc("portugal")
+            let $dados := $i//municipio
+            let $totalpop := sum($dados/populacao)
+            let $totalarea := sum($dados/area)
+            let $densidadeportugal := $totalpop div $totalarea
+            return <portugal>{<totalpop>{xs:integer($totalpop)}</totalpop>, <totalarea>{$totalarea}</totalarea>, <densidadeportugal>{$densidadeportugal}</densidadeportugal>}</portugal>'''
+        query = session.query(input)
+        search = xmltodict.parse(query.execute())['portugal']
+        query.close()
+    finally:
+        if session:
+            infoportugal['totalpop'] = search['totalpop']
+            infoportugal['totalarea'] = search['totalarea']
+            infoportugal['densidadeportugal'] = search['densidadeportugal']
+            session.close()
+    print(infoportugal)
+    return render(request, 'distritos.html', {"send": send, "infoportugal": infoportugal})
 
 def rssFeed(request):
     NewsFeed = feedparser.parse("https://www.ine.pt/ine/rssfeed_pub.jsp?lang=EN")
@@ -96,7 +115,10 @@ def distritoDetail(request):
         #create query instance
         input = "import module namespace funcs = 'com.funcs.my.index';funcs:distrito({})".format(id)
         query = session.query(input)
+        print(query)
+        print("dgsdgs")
         response = query.execute()
+        print("qualquer merda")
 
         query.close()
 
