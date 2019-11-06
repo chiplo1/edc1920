@@ -34,6 +34,18 @@
       * {
   box-sizing: border-box;
 }
+       .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
   </style>
 </head>
@@ -60,14 +72,32 @@
     </div>
   </div>
 </nav>
-
-
+<div class="row">
   <div class="column" style="background-color:#FFFFFF;">
+    <h2 align="center">Dados do Municipio:</h2>
+    <br><br>
 
       {% for key,value in send.items %}
-            <h4>{{ key }} : {{ value }}</h4>
+          {% if key == "nomeconcelho" %}
+            <h4><span class="minortab"> Nome: {{value}}</span></h4>
+          {% elif key == "regiao" %}
+             <h4><span class="minortab"> Região: {{value}}</span></h4>
+          {% elif key == "area" %}
+             <h4><span class="minortab"> Área: {{value}} Km²</span></h4>
+          {% elif key == "populacao" %}
+             <h4><span class="minortab"> Número de habitantes: {{value}} </span></h4>
+          {% elif key == "densidadepopulacional" %}
+             <h4><span class="minortab"> Densidade populacional: {{value}} Hab/Km²</span></h4>
+          {% endif %}
       {% endfor %}
   </div>
+
+  <div class="column" style="background-color:#FFFFFF;">
+    <h2 align="center">Interesses do Municipio:</h2>
+    <br><br>
+  </div>
+
+</div>
 
 </body>
 </html>
