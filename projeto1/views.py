@@ -62,7 +62,6 @@ def distritos(request):
             infoportugal['totalarea'] = search['totalarea']
             infoportugal['densidadeportugal'] = search['densidadeportugal']
             session.close()
-    print(infoportugal)
     return render(request, 'distritos.html', {"send": send, "infoportugal": infoportugal})
 
 def rssFeed(request):
@@ -116,10 +115,8 @@ def distritoDetail(request):
         #create query instance
         input = "import module namespace funcs = 'com.funcs.my.index';funcs:distrito({})".format(id)
         query = session.query(input)
-        print(query)
-        print("dgsdgs")
+
         response = query.execute()
-        print("qualquer merda")
 
         query.close()
 
@@ -160,6 +157,7 @@ def municipioDetail(request):
     search = doc.xpath(string)
 
     send = {}
+    listanomes = {}
 
     for s in search:
         send["nomeconcelho"] = s.find("nomeconcelho").text
@@ -168,8 +166,16 @@ def municipioDetail(request):
         send["area"] = s.find("area").text
         send["populacao"] = s.find("populacao").text
         send["densidadepopulacional"] = s.find("densidadepopulacional").text
+        interesses = s.findall("interesses/interesse")
 
+        if isinstance(interesses,list):
+            for i in interesses:
+                listanomes[i.find("idinteresse").text] = (i.find("nome").text,i.find("tipo").text)
+        else:
+            listanomes[interesses.find("idinteresse").text] = (interesses.find("nome").text,interesses.find("tipo").text)
 
+        send['interesses'] = listanomes
+        print(listanomes)
     return render(request, 'municipioDetail.html', {"send": send})
 
 def interesseDetail(request):
@@ -239,7 +245,6 @@ def interesses(request):
     send['gastronomia'] = gastronomia
     send['patrimonio'] = patrimonio
 
-    print(send)
     return render(request, 'interesses.html', {"send": send})
 
 def sobre(request):
@@ -250,7 +255,6 @@ def labelList(request):
     id = data['id']
     doc = etree.parse("portugal.xml")
     string = "//" + str(id)
-    print(string)
     search = doc.xpath(string)
     send = []
 

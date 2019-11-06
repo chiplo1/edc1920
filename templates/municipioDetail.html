@@ -95,6 +95,32 @@
   <div class="column" style="background-color:#FFFFFF;">
     <h2 align="center">Interesses do Municipio:</h2>
     <br><br>
+          <form action="/interesseDetail/" method='get'>
+                <h4>Cultura:</h4>
+                {% for key, value in send.interesses.items %}
+                    {% if value.1 == 'Cultura' %}
+                        <h4><span class="minortab"><a href="/interesseDetail/?id={{ key }}" > {{value.0}} </a></span></h4>
+                    {% endif %}
+                 {% endfor %}
+                <h4>Lazer:</h4>
+                {% for key, value in send.interesses.items %}
+                    {% if value.1 == 'Lazer' %}
+                        <h4><span class="minortab"><a href="/interesseDetail/?id={{ key }}" > {{value.0}} </a></span></h4>
+                    {% endif %}
+                 {% endfor %}
+                <h4>Patrimonio:</h4>
+                {% for key, value in send.interesses.items %}
+                    {% if value.1 == 'Patrimonio' %}
+                        <h4><span class="minortab"><a href="/interesseDetail/?id={{ key }}" > {{value.0}} </a></span></h4>
+                    {% endif %}
+                 {% endfor %}
+                <h4>Gastronomia e Vinhos:</h4>
+                {% for key, value in send.interesses.items %}
+                    {% if value.1 == 'Gastronomia e vinhos' %}
+                        <h4><span class="minortab"><a href="/interesseDetail/?id={{ key }}" > {{value.0}} </a></span></h4>
+                    {% endif %}
+                 {% endfor %}
+            </form>
   </div>
 
 </div>
