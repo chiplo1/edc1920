@@ -87,6 +87,7 @@ def rssFeed(request):
 #    return render(request, 'distritoDetail.html', {"send": send})
 
 ###########################conecçao com basex  xquery-infoDistrito################################
+
 def distritoDetail(request):
     #create session
     session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
@@ -169,7 +170,55 @@ def interesseDetail(request):
     return render(request, 'interesseDetail.html', {"send": send})
 
 def interesses(request):
-    return render(request, 'interesses.html', {"send": ''})
+    # create session
+    session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+
+    try:
+        # create query instance
+        input1 = "import module namespace funcs = 'com.funcs.my.index';funcs:interesses({})".format("'Cultura'")
+        query1 = session.query(input1)
+        search1 = xmltodict.parse(query1.execute())['interesses']['interesse']
+        send = {}
+        cultura = {}
+        for s in search1:
+            cultura[s['idinteresse']] = s['nome']
+        query1.close()
+
+        input2="import module namespace funcs = 'com.funcs.my.index';funcs:interesses({})".format("'Lazer'")
+        query2 = session.query(input2)
+        search2 = xmltodict.parse(query2.execute())['interesses']['interesse']
+        lazer = {}
+        for s in search2:
+            lazer[s['idinteresse']] = s['nome']
+        query2.close()
+
+        input3 = "import module namespace funcs = 'com.funcs.my.index';funcs:interesses({})".format("'Gastronomia e vinhos'")
+        query3 = session.query(input3)
+        search3 = xmltodict.parse(query3.execute())['interesses']['interesse']
+        gastronomia = {}
+        for s in search3:
+            gastronomia[s['idinteresse']] = s['nome']
+        query3.close()
+
+        input4 = "import module namespace funcs = 'com.funcs.my.index';funcs:interesses({})".format("'Património'")
+        query4 = session.query(input4)
+        search4 = xmltodict.parse(query4.execute())['interesses']['interesse']
+        patrimonio = {}
+        for s in search4:
+            patrimonio[s['idinteresse']] = s['nome']
+        query4.close()
+
+    finally:
+        if session:
+            session.close()
+
+    send['cultura'] = cultura
+    send['lazer'] = lazer
+    send['gastronomia'] = gastronomia
+    send['patrimonio'] = patrimonio
+
+    print(send)
+    return render(request, 'interesses.html', {"send": send})
 
 def sobre(request):
     return render(request, 'sobre.html', {"send": ''})

@@ -31,3 +31,13 @@ declare function funcs:distrito($id as xs:integer) as element()*{
   let $densidadepop := $numpop div $areatotal
   return <distrito>{ <numpopulacao>{$numpop}</numpopulacao>, <areatotal>{$areatotal}</areatotal>, <densidadedistrito>{$densidadepop}</densidadedistrito>, $i/iddistrito, $i/nomedistrito, $i/imagemdistrito, $i/municipios}</distrito>
 };
+
+declare function funcs:interesses($tipo as xs:string) as element()*{
+  <interesses>{
+  for $i in doc("portugal.xml")//interesse
+  where contains($i/tipo,$tipo)
+  let $n := $i/ancestor::distrito
+  let $m := $i/ancestor::municipio/nomeconcelho
+  return <interesse>{$i/nome, $i/tipo, $m, $n/nomedistrito, $i/idinteresse}</interesse>
+  }</interesses>
+};
