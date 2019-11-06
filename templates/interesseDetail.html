@@ -34,9 +34,7 @@
       * {
   box-sizing: border-box;
 }
-
-    /* Create two equal columns that floats next to each other */
-    .column {
+       .column {
       float: left;
       width: 50%;
       padding: 10px;
@@ -48,7 +46,6 @@
       display: table;
       clear: both;
     }
-
 
   </style>
 </head>
@@ -75,14 +72,28 @@
     </div>
   </div>
 </nav>
-
-
+<div class="row">
   <div class="column" style="background-color:#FFFFFF;">
-
+    <h2><span class="minortab">Detalhes:</span> </h2>
+    <br>
       {% for key,value in send.items %}
-            <h4>{{ key }} : {{ value }}</h4>
+          {% if key == "nome" %}
+            <h4><span class="tab"> Nome: {{value}}</span></h4>
+          {% elif key == "tipo" %}
+             <h4><span class="tab"> Tipo: {{value}}</span></h4>
+          {% elif key == "nomeconcelho" %}
+             <h4><span class="tab"> Município: {{value}}</span></h4>
+          {% elif key == "nomedistrito" %}
+             <h4><span class="tab"> Distrito: {{value}} </span></h4>
+          {% endif %}
       {% endfor %}
   </div>
+
+  <div class="column" style="background-color:#FFFFFF;">
+    <br><br>
+  </div>
+
 </div>
+
 </body>
 </html>
