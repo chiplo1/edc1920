@@ -53,8 +53,6 @@
   </style>
 </head>
 <body>
-<br>
-<br>
 <nav class="navbar navbar-inverse navbar-fixed-top" >
   <div class="container-fluid">
     <div class="navbar-header">
@@ -69,22 +67,27 @@
         <li ><a href="/">Home</a></li>
         <li ><a href="/distritos">Portugal</a></li>
         <li ><a href="/interesses">Interesses</a></li>
-        <li ><a href="/rssFeed">rssFeed</a></li>
+        <li class="active"><a href="/rssFeed">rssFeed</a></li>
         <li ><a href="/sobre">Sobre o Site</a></li>
       </ul>
     </div>
   </div>
 </nav>
+<br>
+<br>
+<h1>RSS Feed do Instituto Nacional de Estatística de Portugal</h1>
 
 
-  <div class="column" style="background-color:#FFFFFF;">
-
-      {% for key,value in send.items %}
-            <h4>{{ key }} : {{ value }}</h4>
-      {% endfor %}
+ <div class="column" style="background-color:#FFFFFF;">
+     {% for item in list %}
+         <h4>{{ "title" }} : {{ item.news_title }}</h4>
+         <h4>{{ "description" }} : {{ item.news_description }}</h4>
+         <h4>{{ "link" }} : <a href="{{ item.news_link }}/">{{ item.news_link }}</a></h4>
+         <h4> </h4>
+         <h4> </h4>
+         <h4> </h4>
+     {% endfor %}
   </div>
 
 </body>
 </html>
-
-

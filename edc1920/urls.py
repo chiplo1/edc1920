@@ -27,6 +27,7 @@ urlpatterns = [
     path('interesseDetail/', views.interesseDetail, name='interesseDetail'),
     path('interesses/', views.interesses, name='interesses'),
     path('sobre/', views.sobre, name='sobre'),
+    path('rssFeed/', views.rssFeed, name='rssFeed'),
     path('labelList/', views.labelList, name='labelList')
 ]
 

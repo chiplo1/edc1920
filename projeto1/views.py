@@ -2,6 +2,7 @@ from lxml import etree
 from django.shortcuts import render
 from BaseXClient import BaseXClient
 import xmltodict
+import feedparser
 
 # Create your views here.
 
@@ -44,6 +45,19 @@ def distritos(request):
         send[s.find("nomedistrito").text] = s.find("iddistrito").text
 
     return render(request, 'main.html', {"send": send})
+
+def rssFeed(request):
+    NewsFeed = feedparser.parse("https://www.ine.pt/ine/rssfeed_pub.jsp?lang=EN")
+    list = []
+    for news_entry in NewsFeed.entries:
+        dict = {
+        'news_title': news_entry.title,
+        'news_link': news_entry.link,
+        'news_description': news_entry.description,
+        }
+        list.append(dict)
+
+    return render(request, 'rssFeed.html', {"list": list})
 
 #def distritoDetail(request):
 #    data = request.GET
