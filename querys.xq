@@ -38,6 +38,8 @@ declare function funcs:interesses($tipo as xs:string) as element()*{
   where contains($i/tipo,$tipo)
   let $n := $i/ancestor::distrito
   let $m := $i/ancestor::municipio/nomeconcelho
-  return <interesse>{$i/nome, $i/tipo, $m, $n/nomedistrito, $i/idinteresse}</interesse>
+  let $o := $i/ancestor::municipio/regiao
+  order by $i/nome
+  return <interesse>{$i/nome, $i/tipo, $m, $n/nomedistrito,$o, $i/idinteresse}</interesse>
   }</interesses>
 };
