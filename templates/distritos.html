@@ -111,7 +111,16 @@
         </div>
         <div class="column">
             <h1>Dados gerais</h1>
-
+        <br>
+            {% for key,value in infoportugal.items %}
+                {% if  key == "totalpop" and value != None %}
+                    <h3><span class="minortab"> População atual: {{value}} habitantes.</span></h3>
+                {% elif key == "totalarea" and value != None %}
+                    <h3><span class="minortab"> Área:  {{value}} km².</span></h3>
+                {% elif key == "densidadeportugal" and value != None %}
+                    <h3><span class="minortab"> Densidade populacional: {{value}} hab./km².</span></h3>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </div>

@@ -35,20 +35,6 @@
   box-sizing: border-box;
 }
 
-    /* Create two equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 50%;
-      padding: 10px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
 
   </style>
 </head>
@@ -75,17 +61,19 @@
 </nav>
 <br>
 <br>
-<h1>RSS Feed do Instituto Nacional de Estatística de Portugal</h1>
+<h1 align="center">RSS Feed do Instituto Nacional de Estatística de Portugal</h1>
+<br>
 
 
  <div class="column" style="background-color:#FFFFFF;">
      {% for item in list %}
-         <h4>{{ "title" }} : {{ item.news_title }}</h4>
-         <h4>{{ "description" }} : {{ item.news_description }}</h4>
-         <h4>{{ "link" }} : <a href="{{ item.news_link }}/">{{ item.news_link }}</a></h4>
-         <h4> </h4>
-         <h4> </h4>
-         <h4> </h4>
+         <h3 align="center">{{ item.news_title }}</h3>
+         {% autoescape off %}
+            <h4 align="center">{{ item.news_description }}</h4>
+         {% endautoescape %}
+         <h4 align="center">Hiperligação:</h4>
+         <h4 align="center"><a href="{{ item.news_link }}/">{{ item.news_link }}</a></h4>
+         <br>
      {% endfor %}
   </div>
 
