@@ -17,7 +17,7 @@ def main(request):
 
     try:
         input = '''
-        for $i in doc("portugal.xml")
+        for $i in doc("portugal")
         let $dados := $i//municipio
         let $totalpop := sum($dados/populacao)
         let $totalarea := sum($dados/area)
@@ -25,7 +25,10 @@ def main(request):
         return <portugal>{<totalpop>{xs:integer($totalpop)}</totalpop>, <totalarea>{$totalarea}</totalarea>, <densidadeportugal>{$densidadeportugal}</densidadeportugal>}</portugal>'''
         query = session.query(input)
         response = query.execute()
+
         query.close()
+
+
     finally:
         if session:
             search = xmltodict.parse(response)['portugal']
