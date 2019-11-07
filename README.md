@@ -13,4 +13,4 @@ packages
   Configuraçao do baseX: instalar o pacote das querys no baseX 
     BaseX -> options->packages->install->querys.xq(nosso ficheiro da contem as querys)
     se necessario adicionar o potugal.xml à pasta repo/com/funcs/my
-    
+    dados da BaseX encontram-se na pasta data
