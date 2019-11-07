@@ -25,6 +25,7 @@ urlpatterns = [
     path('distritoDetail/', views.distritoDetail, name='distritoDetail'),
     path('municipioDetail/', views.municipioDetail, name='municipioDetail'),
     path('interesseDetail/', views.interesseDetail, name='interesseDetail'),
+    path('validateXML/', views.validateXML, name='validateXML'),  ## TEST ONLY
     path('interesses/', views.interesses, name='interesses'),
     path('sobre/', views.sobre, name='sobre'),
     path('rssFeed/', views.rssFeed, name='rssFeed'),

@@ -2,9 +2,10 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="interesses" type="interessesType"/>
   <xs:complexType name="interesseType">
-    <xs:choice maxOccurs="4" minOccurs="0">
-      <xs:element type="xs:string" name="nome" maxOccurs="1" minOccurs="1"/>
-      <xs:element name="tipo" maxOccurs="1" minOccurs="1">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="xs:string" name="idinteresse"/>
+      <xs:element type="xs:string" name="nome"/>
+      <xs:element name="tipo">
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="Lazer"/>
@@ -14,8 +15,8 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element type="xs:string" name="nomedistrito" maxOccurs="1" minOccurs="1"/>
-      <xs:element type="xs:string" name="nomeconcelho" maxOccurs="1" minOccurs="1"/>
+      <xs:element type="xs:string" name="nomedistrito"/>
+      <xs:element type="xs:string" name="nomeconcelho"/>
     </xs:choice>
   </xs:complexType>
   <xs:complexType name="interessesType">

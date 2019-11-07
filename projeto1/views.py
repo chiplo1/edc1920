@@ -1,6 +1,9 @@
 from lxml import etree
 from django.shortcuts import render
 from BaseXClient import BaseXClient
+from io import StringIO
+from io import BytesIO
+import sys
 import xmltodict
 import feedparser
 
@@ -149,6 +152,8 @@ def distritoDetail(request):
 
 
 def municipioDetail(request):
+    nomeinteresse = None
+    tipo = None
     data = request.GET
     id = data['id']
     doc = etree.parse("portugal.xml")
@@ -175,7 +180,82 @@ def municipioDetail(request):
             listanomes[interesses.find("idinteresse").text] = (interesses.find("nome").text,interesses.find("tipo").text)
 
         send['interesses'] = listanomes
-        print(listanomes)
+
+        # receber informaçao do html para adicinar o interesse
+    if 'nomeinteresse' in request.POST and 'tipo' in request.POST:
+        nomeinteresse = request.POST.get('nomeinteresse')
+        tipo = request.POST.get('tipo')
+
+    maximo = 100
+    response = None
+    session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+    try:
+        # create query instance
+        if (nomeinteresse != None and tipo != None):
+            # input = "import module namespace funcs = 'com.funcs.my.index';funcs:add({}, {}, {}, {})".format(id, str(nomeinteresse), tipo, maximo+1)
+            input = '''for $i in doc('portugal')//municipio
+                       where $i/idmunicipio = {}
+                       return
+                         insert node
+                       <interesse>
+                         <idinteresse>{}</idinteresse>
+                         <nome>{}</nome>
+                         <tipo>{}</tipo>
+                       </interesse>
+                       as last into $i/interesses'''.format(id, maximo, nomeinteresse, tipo)
+            query = session.query(input)
+            response = query.execute()
+            query.close()
+    finally:
+        maximo += 1
+        if session:
+            session.close()
+
+    send['valid'] = 'Não selecionou nenhum XML'
+
+    if 'xmldocument' in request.POST :
+        doc = request.POST.get('xmldocument')
+        if doc != '':
+            xmldocument = request.POST.get('xmldocument')
+            isvalid = validateXML(xmldocument)
+            send['valid'] = isvalid
+            ## XML VALID, NOW INSERT INTO DATABASE
+
+            if isvalid == 'XML válido':
+                values = etree.parse(xmldocument)
+
+                search = values.xpath("//interesse")
+                # create session
+                session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+                '''
+                for s in search:
+                    
+                    nomei = s.find("nome").text
+                    tipoi = s.find("tipo").text
+                    nomedistritoi = s.find("nomedistrito").text
+                    nomeconcelhoi = s.find("nomeconcelho").text
+                    try:
+                        # create query instance
+                        if (nomei != None and tipoi != None and nomedistritoi != None and nomeconcelhoi != None):
+                            # input = "import module namespace funcs = 'com.funcs.my.index';funcs:add({}, {}, {}, {})".format(nomeconcelhoi, str(nomei), tipoi, maximo)
+                            #input = ''''''for $i in doc('portugal')//municipio
+                                       where $i/nomeconcelho = {}
+                                       return
+                                         insert node
+                                       <interesse>
+                                         <idinteresse>{}</idinteresse>
+                                         <nome>{}</nome>
+                                         <tipo>{}</tipo>
+                                       </interesse>
+                              #         as last into $i/interesses''''''.format(nomeconcelhoi, maximo, nomei, tipoi)
+                            query = session.query(input)
+                            response = query.execute()
+                            query.close()
+                    finally:
+                        maximo += 1
+                        if session:
+                            session.close()'''
+
     return render(request, 'municipioDetail.html', {"send": send})
 
 def interesseDetail(request):
@@ -183,11 +263,11 @@ def interesseDetail(request):
     session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
     data = request.GET
     id = data['id']
+    search = {}
     try:
         #create query instance
         input = "import module namespace funcs = 'com.funcs.my.index';funcs:interesse({})".format(id)
         query = session.query(input)
-
         search = xmltodict.parse(query.execute())['interesse']
         query.close()
         #print(search)
@@ -285,3 +365,33 @@ def labelList(request):
 #        send["nome"] = s.find("nome").text
 #        send["tipo"] = s.find("tipo").text
 #    return render(request, 'municipioDetail.html', {"send": send})'''
+
+def validateXML(name):
+    filename_xml = name
+    filename_xsd = "interesses.xsd"
+    # open and read schema file
+    with open(filename_xsd, 'r') as schema_file:
+        schema_to_check = schema_file.read().encode('utf-8')
+    # open and read xml file
+    with open(filename_xml, 'r') as xml_file:
+        xml_to_check = xml_file.read().encode('utf-8')
+    xmlschema_doc = etree.parse(BytesIO(schema_to_check))
+    xmlschema = etree.XMLSchema(xmlschema_doc)
+    # parse xml
+    valid = 'XML inválido'
+    try:
+        doc = etree.parse(BytesIO(xml_to_check))
+        print('XML well formed, syntax ok.')
+        valid = 'XML válido'
+    # check for file IO error
+    finally:
+        valid = 'XML inválido'
+        try:
+            xmlschema.assertValid(doc)
+            print('XML valid, schema validation ok.')
+            valid = 'XML válido'
+        finally:
+            return valid
+
+
+
