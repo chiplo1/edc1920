@@ -202,13 +202,59 @@ def municipioDetail(request):
                          <nome>{}</nome>
                          <tipo>{}</tipo>
                        </interesse>
-                       as last into $i/interesses'''.format(id, maximo + 1, nomeinteresse, tipo)
+                       as last into $i/interesses'''.format(id, maximo, nomeinteresse, tipo)
             query = session.query(input)
             response = query.execute()
             query.close()
     finally:
+        maximo += 1
         if session:
             session.close()
+
+    send['valid'] = 'Não selecionou nenhum XML'
+
+    if 'xmldocument' in request.POST :
+        doc = request.POST.get('xmldocument')
+        if doc != '':
+            xmldocument = request.POST.get('xmldocument')
+            isvalid = validateXML(xmldocument)
+            send['valid'] = isvalid
+            ## XML VALID, NOW INSERT INTO DATABASE
+
+            if isvalid == 'XML válido':
+                values = etree.parse(xmldocument)
+
+                search = values.xpath("//interesse")
+                # create session
+                session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+                '''
+                for s in search:
+                    
+                    nomei = s.find("nome").text
+                    tipoi = s.find("tipo").text
+                    nomedistritoi = s.find("nomedistrito").text
+                    nomeconcelhoi = s.find("nomeconcelho").text
+                    try:
+                        # create query instance
+                        if (nomei != None and tipoi != None and nomedistritoi != None and nomeconcelhoi != None):
+                            # input = "import module namespace funcs = 'com.funcs.my.index';funcs:add({}, {}, {}, {})".format(nomeconcelhoi, str(nomei), tipoi, maximo)
+                            #input = ''''''for $i in doc('portugal')//municipio
+                                       where $i/nomeconcelho = {}
+                                       return
+                                         insert node
+                                       <interesse>
+                                         <idinteresse>{}</idinteresse>
+                                         <nome>{}</nome>
+                                         <tipo>{}</tipo>
+                                       </interesse>
+                              #         as last into $i/interesses''''''.format(nomeconcelhoi, maximo, nomei, tipoi)
+                            query = session.query(input)
+                            response = query.execute()
+                            query.close()
+                    finally:
+                        maximo += 1
+                        if session:
+                            session.close()'''
 
     return render(request, 'municipioDetail.html', {"send": send})
 
@@ -217,6 +263,7 @@ def interesseDetail(request):
     session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
     data = request.GET
     id = data['id']
+    search = {}
     try:
         #create query instance
         input = "import module namespace funcs = 'com.funcs.my.index';funcs:interesse({})".format(id)
@@ -319,7 +366,7 @@ def labelList(request):
 #        send["tipo"] = s.find("tipo").text
 #    return render(request, 'municipioDetail.html', {"send": send})'''
 
-def validateXML(request, name):
+def validateXML(name):
     filename_xml = name
     filename_xsd = "interesses.xsd"
     # open and read schema file
@@ -331,19 +378,20 @@ def validateXML(request, name):
     xmlschema_doc = etree.parse(BytesIO(schema_to_check))
     xmlschema = etree.XMLSchema(xmlschema_doc)
     # parse xml
-    valid = False
+    valid = 'XML inválido'
     try:
         doc = etree.parse(BytesIO(xml_to_check))
         print('XML well formed, syntax ok.')
-        valid = True
+        valid = 'XML válido'
     # check for file IO error
     finally:
-        valid = False
+        valid = 'XML inválido'
         try:
             xmlschema.assertValid(doc)
             print('XML valid, schema validation ok.')
-            valid = True
+            valid = 'XML válido'
         finally:
-            render(request, 'municipioDetail.html', valid)
+            return valid
+
 
 

@@ -123,13 +123,23 @@
             </form>
             <br>
 
-            <h3>Inserir Interesses (por XML)</h3>
-            <input id='xmldocument' type="file">
+            <h3>Inserir Interesses:</h3>
+            <h4>Por XML</h4>
+            <form method="post" >
+                {% csrf_token %}
+                <input id='xmldocument' name = 'xmldocument' type="file">
+                <button id='button' >Validar</button>
+            </form>
+            <form action="/municipioDetail/" method='get'>
+                {% for key,value in send.items %}
+                    {% if key == 'valid' and not empty %}
+                        <h5>{{ value }}</h5>
+                    {% endif %}
+                {% endfor %}
+            </form>
+
   <br>
-            <button id='button' onclick="myFunction()">Validar</button>
-  <br>
-            <p id="valid"></p>
-  <br>
+            <h4>Manualmente</h4>
             <button type="button" value="Inserir" onclick="visivel(this)">Adicionar interesse</button>
       <br><br>
          <form method="post" id="dvInserir" style="display: none">
@@ -151,27 +161,8 @@
 <script>
 function visivel(btnInserir) {
         var dvInserir = document.getElementById("dvInserir");
-        dvInserir.style.display = btnInserir.value == "Inserir" ? "block" : "none";
+        dvInserir.style.display = "Inserir" ? "block" : "none";
 }
-function myFunction() {
-  document.getElementById("valid").innerHTML = document.getElementById('xmldocument').value;
-
-}
-/*
-function analyzeFile(){
-            var text = document.getElementById('xmldocument').value;
-
-            $.ajax({
-                type: "POST",
-                url: '{{ '/validateXML/' }}',
-                data: { csrfmiddlewaretoken: '{{ csrf_token }}', text: text },
-                success: function callback(response){
-                           // do whatever with the response
-                           alert(response);
-                        }
-            });
-        }
-        */
 </script>
 
 </body>
