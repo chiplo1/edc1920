@@ -152,6 +152,8 @@ def distritoDetail(request):
 
 
 def municipioDetail(request):
+    nomeinteresse = None
+    tipo = None
     data = request.GET
     id = data['id']
     doc = etree.parse("portugal.xml")
@@ -179,6 +181,35 @@ def municipioDetail(request):
 
         send['interesses'] = listanomes
 
+        # receber informaçao do html para adicinar o interesse
+    if 'nomeinteresse' in request.POST and 'tipo' in request.POST:
+        nomeinteresse = request.POST.get('nomeinteresse')
+        tipo = request.POST.get('tipo')
+
+    maximo = 100
+    response = None
+    session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+    try:
+        # create query instance
+        if (nomeinteresse != None and tipo != None):
+            # input = "import module namespace funcs = 'com.funcs.my.index';funcs:add({}, {}, {}, {})".format(id, str(nomeinteresse), tipo, maximo+1)
+            input = '''for $i in doc('portugal')//municipio
+                       where $i/idmunicipio = {}
+                       return
+                         insert node
+                       <interesse>
+                         <idinteresse>{}</idinteresse>
+                         <nome>{}</nome>
+                         <tipo>{}</tipo>
+                       </interesse>
+                       as last into $i/interesses'''.format(id, maximo + 1, nomeinteresse, tipo)
+            query = session.query(input)
+            response = query.execute()
+            query.close()
+    finally:
+        if session:
+            session.close()
+
     return render(request, 'municipioDetail.html', {"send": send})
 
 def interesseDetail(request):
@@ -190,7 +221,6 @@ def interesseDetail(request):
         #create query instance
         input = "import module namespace funcs = 'com.funcs.my.index';funcs:interesse({})".format(id)
         query = session.query(input)
-
         search = xmltodict.parse(query.execute())['interesse']
         query.close()
         #print(search)

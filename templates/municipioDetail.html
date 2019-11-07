@@ -129,14 +129,30 @@
             <button id='button' onclick="myFunction()">Validar</button>
   <br>
             <p id="valid"></p>
-
-
+  <br>
+            <button type="button" value="Inserir" onclick="visivel(this)">Adicionar interesse</button>
+      <br><br>
+         <form method="post" id="dvInserir" style="display: none">
+            {% csrf_token %}
+            <p>Nome: <input type="text" name="nomeinteresse"/></p>
+            <p>Tipo: <select name="tipo">
+            <option value="cultura">Cultura</option>
+            <option value="patrimonio">Patrimonio</option>
+            <option value="Lazer">Lazer</option>
+            <option value="gastronomia">Gastronomia e vinhos</option>
+        </select></p>
+             <p><input type="submit" value="Adicionar"/></p>
+        </form>
 
   </div>
 
 </div>
 
 <script>
+function visivel(btnInserir) {
+        var dvInserir = document.getElementById("dvInserir");
+        dvInserir.style.display = btnInserir.value == "Inserir" ? "block" : "none";
+}
 function myFunction() {
   document.getElementById("valid").innerHTML = document.getElementById('xmldocument').value;
 
