@@ -74,3 +74,15 @@ declare updating function funcs:deleteinteresse($id as xs:integer){
   where $i/interesse/idinteresse = $id
   return delete node $i/interesse
 };
+
+declare updating function funcs:editarnome($id as xs:integer, $nome as xs:string){
+  for $i in doc("portugal.xml")//interesses
+  where $i/idinteresse = $id
+  return replace node $i/interesse/nome/text() with $nome 
+};
+
+declare updating function funcs:editartipo($id as xs:integer, $tipo as xs:string){
+  for $i in doc("portugal.xml")//interesses
+  where $i/idinteresse = $id
+  return replace node $i/interesse/tipo/text() with $tipo 
+};
