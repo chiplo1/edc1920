@@ -1,6 +1,9 @@
 from lxml import etree
 from django.shortcuts import render
 from BaseXClient import BaseXClient
+from io import StringIO
+from io import BytesIO
+import sys
 import xmltodict
 import feedparser
 
@@ -175,7 +178,7 @@ def municipioDetail(request):
             listanomes[interesses.find("idinteresse").text] = (interesses.find("nome").text,interesses.find("tipo").text)
 
         send['interesses'] = listanomes
-        print(listanomes)
+
     return render(request, 'municipioDetail.html', {"send": send})
 
 def interesseDetail(request):
@@ -279,3 +282,32 @@ def labelList(request):
 #        send["nome"] = s.find("nome").text
 #        send["tipo"] = s.find("tipo").text
 #    return render(request, 'municipioDetail.html', {"send": send})'''
+
+def validateXML(request, name):
+    filename_xml = name
+    filename_xsd = "interesses.xsd"
+    # open and read schema file
+    with open(filename_xsd, 'r') as schema_file:
+        schema_to_check = schema_file.read().encode('utf-8')
+    # open and read xml file
+    with open(filename_xml, 'r') as xml_file:
+        xml_to_check = xml_file.read().encode('utf-8')
+    xmlschema_doc = etree.parse(BytesIO(schema_to_check))
+    xmlschema = etree.XMLSchema(xmlschema_doc)
+    # parse xml
+    valid = False
+    try:
+        doc = etree.parse(BytesIO(xml_to_check))
+        print('XML well formed, syntax ok.')
+        valid = True
+    # check for file IO error
+    finally:
+        valid = False
+        try:
+            xmlschema.assertValid(doc)
+            print('XML valid, schema validation ok.')
+            valid = True
+        finally:
+            render(request, 'municipioDetail.html', valid)
+
+

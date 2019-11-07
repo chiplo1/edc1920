@@ -1,0 +1,2 @@
+<string>:5:0:ERROR:SCHEMASV:SCHEMAV_CVC_ENUMERATION_VALID: Element 'tipo': [facet 'enumeration'] The value 'Gastronomia e vinhos' is not an element of the set {'Lazer', 'Gastronomia e vihos', 'Património', 'Cultura'}.
+<string>:5:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_1: Element 'tipo': 'Gastronomia e vinhos' is not a valid value of the local atomic type.

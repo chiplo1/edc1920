@@ -1,0 +1,16 @@
+<interesses>
+    <interesse>
+        <idinteresse>1</idinteresse>
+        <nome>Passadiços do Paiva</nome>
+        <tipo>Gastronomia e vinhos</tipo>
+        <nomedistrito>Viana do Castelo</nomedistrito>
+        <nomeconcelho>Albergaria-a-Velha</nomeconcelho>
+    </interesse>
+    <interesse>
+        <idinteresse>1</idinteresse>
+        <nome>Passadiços dos Paivas</nome>
+        <tipo>Lazer</tipo>
+        <nomedistrito>Viana do Castelo</nomedistrito>
+        <nomeconcelho>Aveiro</nomeconcelho>
+    </interesse>
+</interesses>

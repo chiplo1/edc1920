@@ -121,9 +121,42 @@
                     {% endif %}
                  {% endfor %}
             </form>
+            <br>
+
+            <h3>Inserir Interesses (por XML)</h3>
+            <input id='xmldocument' type="file">
+  <br>
+            <button id='button' onclick="myFunction()">Validar</button>
+  <br>
+            <p id="valid"></p>
+
+
+
   </div>
 
 </div>
+
+<script>
+function myFunction() {
+  document.getElementById("valid").innerHTML = document.getElementById('xmldocument').value;
+
+}
+/*
+function analyzeFile(){
+            var text = document.getElementById('xmldocument').value;
+
+            $.ajax({
+                type: "POST",
+                url: '{{ '/validateXML/' }}',
+                data: { csrfmiddlewaretoken: '{{ csrf_token }}', text: text },
+                success: function callback(response){
+                           // do whatever with the response
+                           alert(response);
+                        }
+            });
+        }
+        */
+</script>
 
 </body>
 </html>
