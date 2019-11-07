@@ -74,8 +74,9 @@
   </div>
 </nav><br><br>
 <div class="column" style="background-color:#FFFFFF;">
-
-    {{ sobre }}
+    {% autoescape off %}
+        {{ sobre }}
+    {% endautoescape %}
   </div>
 </body>
 </html>
