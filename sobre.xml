@@ -1,4 +1,3 @@
-<?xml version = "1.0" ?>
 <?xml-stylesheet href="sobre.xsl" type="text/xsl" ?>
 
 <about>
@@ -6,42 +5,54 @@
         O tema baseia-se na exposição de informação de dados geográficos do país, juntamente com as suas atrações turísticas.</description>
     <objectives>
         <objective>
-            <name> XML (formato dos dados);</name>
+            <name>XML (formato dos dados);</name>
             <done>True</done>
         </objective>
         <objective>
-            <name> XML Schema (modelação e validação);</name>
+            <name>XML Schema (modelação e validação);</name>
             <done>True</done>
         </objective>
         <objective>
-            <name> XPATH (filtragem de dados);</name>
+            <name>XPATH (filtragem de dados);</name>
             <done>True</done>
         </objective>
         <objective>
-            <name> XSLT (transformação de dados);</name>
+            <name>XSLT (transformação de dados);</name>
             <done>True</done>
         </objective>
         <objective>
-            <name> BaseX (armazenamento de dados);</name>
+            <name>BaseX (armazenamento de dados);</name>
             <done>True</done>
         </objective>
         <objective>
-            <name> XQuery e XQuery Update (pesquisa e alteração dos dados na BD);</name>
+            <name>XQuery e XQuery Update (pesquisa e alteração dos dados na BD);</name>
             <done>True</done>
         </objective>
         <objective>
-            <name> RSS e/ou Atom (recolha de dados externos).</name>
+            <name>RSS e/ou Atom (recolha de dados externos).</name>
             <done>True</done>
         </objective>
         <objective>
-            <name> Python/Django (programação da aplicação);</name>
+            <name>Python/Django (programação da aplicação);</name>
             <done>True</done>
         </objective>
     </objectives>
     <authors>
-        <author>Fábio Nunes 80321</author>
-        <author>Guilherme Henriques 80100</author>
-        <author>José Cristiano 79671</author>
-        <author>Mariana Pinheiro 80186</author>
+        <author>
+            <nome>Fábio Nunes</nome>
+            <numero>80321</numero>
+        </author>
+        <author>
+            <nome>José Cristiano</nome>
+            <numero>79671</numero>
+        </author>
+        <author>
+            <nome>Mariana Pinheiro</nome>
+            <numero>80186</numero>
+        </author>
+        <author>
+            <nome>Guilherme Henriques</nome>
+            <numero>80100</numero>
+        </author>
     </authors>
 </about>

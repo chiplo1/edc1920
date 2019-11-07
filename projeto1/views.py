@@ -248,10 +248,12 @@ def interesses(request):
     return render(request, 'interesses.html', {"send": send})
 
 def sobre(request):
-    ex = etree.parse("sobre.xml")
+    s = etree.parse("sobre.xml")
     xslt = etree.parse("sobre.xsl")
     transf = etree.XSLT(xslt)
-    return render(request, 'sobre.html', {"send": transf})
+    sobre = transf(s)
+    print(sobre)
+    return render(request, 'sobre.html', {"sobre": sobre})
 
 def labelList(request):
     data = request.GET
