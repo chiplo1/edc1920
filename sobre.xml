@@ -3,6 +3,7 @@
 <about>
     <description>Esta webapp é o resultado do primeiro projeto de Engenharia de Dados e Conhecimento.
         O tema baseia-se na exposição de informação de dados geográficos do país, juntamente com as suas atrações turísticas.</description>
+    <objetivo>Objetivos:</objetivo>
     <objectives>
         <objective>
             <name>XML (formato dos dados);</name>
@@ -37,6 +38,8 @@
             <done>True</done>
         </objective>
     </objectives>
+
+    <autores>Autores:</autores>
     <authors>
         <author>
             <nome>Fábio Nunes</nome>

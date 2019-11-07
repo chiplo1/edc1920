@@ -17,13 +17,6 @@
       border-radius: 0;
     }
 
-    .tab {
-        display:inline-block;
-       margin-left: 40px;
-}
-        .minortab {
-        display:inline-block;
-       margin-left: 20px;
 }
     /* Add a gray background color and some padding to the footer */
     footer {
@@ -35,24 +28,8 @@
   box-sizing: border-box;
 }
 
-    /* Create two equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 50%;
-      padding: 10px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-
   </style>
 </head>
-<body>
 <nav class="navbar navbar-inverse navbar-fixed-top" >
   <div class="container-fluid">
     <div class="navbar-header">
@@ -68,14 +45,13 @@
         <li ><a href="/distritos">Portugal</a></li>
         <li ><a href="/interesses">Interesses</a></li>
         <li ><a href="/rssFeed">rssFeed</a></li>
-        <li class="active"><a href="/sobre">Sobre o Site</a></li>
+        <li ><a href="/sobre">Sobre o Site</a></li>
       </ul>
     </div>
   </div>
-</nav><br><br>
-<div class="column" style="background-color:#FFFFFF;">
+</nav>
 
-    {{ sobre }}
-  </div>
-</body>
-</html>
+{% autoescape off %}
+    <br><br><br>
+{{ sobre }}
+{% endautoescape %}
