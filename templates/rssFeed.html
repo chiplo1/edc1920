@@ -69,10 +69,10 @@
      {% for item in list %}
          <h3 align="center">{{ item.news_title }}</h3>
          {% autoescape off %}
-            <h4 align="center">{{ item.news_description }}</h4>
+            <h5 align="center">{{ item.news_description }}</h5>
          {% endautoescape %}
-         <h4 align="center">Hiperligação:</h4>
-         <h4 align="center"><a href="{{ item.news_link }}/">{{ item.news_link }}</a></h4>
+         <h5 align="center">Hiperligação:</h5>
+         <h5 align="center"><a href="{{ item.news_link }}">{{ item.news_link }}</a></h5>
          <br>
      {% endfor %}
   </div>
