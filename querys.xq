@@ -11,7 +11,6 @@ declare function funcs:interesse ($id as xs:integer) as element()* {
   let $interesse := ($i/nome, $i/tipo, $m, $n/nomedistrito)
   return <interesse>{$interesse}</interesse>
 };
-(:<interesse>{local:interesse("1")}</interesse>:)
 
 (:recebe um id de um distrito e retorna os seus interesses:)
 declare function funcs:interesseDist($id as xs:integer) as element()*{
@@ -49,7 +48,7 @@ declare function funcs:interesseMunicipio($id as xs:integer) as element()*{
   for $i in doc('portugal')//municipio
   where $i/idmunicipio = $id
   let $interesse := $i//interesse
-  return<interesse>{$interesse}</interesse>
+  return<interesse>{$interesse} <num>{count($interesse)}</num></interesse>
 };
 
 (:declare

@@ -1,3 +1,5 @@
+from itertools import count
+
 from lxml import etree
 from django.shortcuts import render
 from BaseXClient import BaseXClient
@@ -154,6 +156,7 @@ def distritoDetail(request):
 def municipioDetail(request):
     nomeinteresse = None
     tipo = None
+    lastid = None
     data = request.GET
     id = data['id']
     doc = etree.parse("portugal.xml")
@@ -162,7 +165,6 @@ def municipioDetail(request):
     search = doc.xpath(string)
 
     send = {}
-    listanomes = {}
 
     for s in search:
         send["nomeconcelho"] = s.find("nomeconcelho").text
@@ -171,28 +173,65 @@ def municipioDetail(request):
         send["area"] = s.find("area").text
         send["populacao"] = s.find("populacao").text
         send["densidadepopulacional"] = s.find("densidadepopulacional").text
-        interesses = s.findall("interesses/interesse")
+        #interesses = s.findall("interesses/interesse")
 
-        if isinstance(interesses,list):
-            for i in interesses:
-                listanomes[i.find("idinteresse").text] = (i.find("nome").text,i.find("tipo").text)
+        #if isinstance(interesses,list):
+         #   for i in interesses:
+          #      listanomes[i.find("idinteresse").text] = (i.find("nome").text,i.find("tipo").text)
+        #else:
+        #    listanomes[interesses.find("idinteresse").text] = (interesses.find("nome").text,interesses.find("tipo").text)
+
+        #send['interesses'] = listanomes
+
+    #####IMPRIMIR INTERESSES
+    session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+    listanomes = {}
+    try:
+        input = "import module namespace funcs = 'com.funcs.my.index';funcs:interesseMunicipio({})".format(id)
+        query = session.query(input)
+        response = query.execute()
+        search = xmltodict.parse(response)['interesse']
+        #print(search)
+        #print(search['num'])
+        if search['num'] == "0":
+            listanomes = {}
+        elif search['num'] == "1":
+            #print(search['interesse']['nome'])
+            listanomes[search['interesse']['idinteresse']] = {"nome": search['interesse']['nome'], "tipo": search['interesse']['tipo']}
         else:
-            listanomes[interesses.find("idinteresse").text] = (interesses.find("nome").text,interesses.find("tipo").text)
+            for s in search['interesse']:
+                print(s)
+                listanomes[s['idinteresse']] = {"nome": s['nome'], "tipo": s['tipo']}
+        #print(listanomes)
+        query.close()
+    finally:
+        if session:
+            session.close()
 
-        send['interesses'] = listanomes
+    session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+    try:
+        input = '''for $i in doc('portugal')
+                        let $int := $i//idinteresse
+                        return max($int)'''
+        query = session.query(input)
+        lastid = query.execute()
+        query.close()
+    finally:
+        if session:
+            session.close()
 
-        # receber informaçao do html para adicinar o interesse
+     # receber informaçao do html para adicinar o interesse
     if 'nomeinteresse' in request.POST and 'tipo' in request.POST:
         nomeinteresse = request.POST.get('nomeinteresse')
         tipo = request.POST.get('tipo')
 
-    maximo = 100
     response = None
     session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
     try:
         # create query instance
         if (nomeinteresse != None and tipo != None):
             # input = "import module namespace funcs = 'com.funcs.my.index';funcs:add({}, {}, {}, {})".format(id, str(nomeinteresse), tipo, maximo+1)
+            lastid = int(lastid, 10) + 1
             input = '''for $i in doc('portugal')//municipio
                        where $i/idmunicipio = {}
                        return
@@ -202,15 +241,14 @@ def municipioDetail(request):
                          <nome>{}</nome>
                          <tipo>{}</tipo>
                        </interesse>
-                       as last into $i/interesses'''.format(id, maximo, nomeinteresse, tipo)
+                       as last into $i/interesses'''.format(id, lastid, nomeinteresse, tipo)
             query = session.query(input)
             response = query.execute()
             query.close()
     finally:
-        maximo += 1
+        #lastid += 1
         if session:
             session.close()
-
     send['valid'] = 'Não selecionou nenhum XML'
 
     if 'xmldocument' in request.POST :
@@ -256,7 +294,7 @@ def municipioDetail(request):
                         if session:
                             session.close()'''
 
-    return render(request, 'municipioDetail.html', {"send": send})
+    return render(request, 'municipioDetail.html', {"send": send, "interesses": listanomes})
 
 def interesseDetail(request):
     # create session
